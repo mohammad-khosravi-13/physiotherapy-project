@@ -1,5 +1,9 @@
-const Page=()=>{
-  return <div className=""></div>
+import React from "react";
+import Header from "./Header/page";
+
+function page() {
+  return <div>page</div>;
+  
 }
 
-export default Page
+export default page;

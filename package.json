@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "ag-charts-react": "^10.3.1",
     "next": "14.2.16",
     "react": "^18",
-    "react-dom": "^18"
+    "react-date-object": "^2.1.9",
+    "react-dom": "^18",
+    "react-multi-date-picker": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

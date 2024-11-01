@@ -5,11 +5,6 @@ import DashboardCards from "../../container/dashborde/DashboardCards";
 import NemodarCards from "../../container/dashborde/NemodarCards";
 
 function page() {
-  const nemodar = [
-    { text: "خدمات منزل", color: "bg-[#34B53A]" },
-    { text: "خدمات کلینیک", color: "bg-[#FF3A29]" },
-    { text: "محصولات", color: "bg-[#4339F2]" },
-  ];
   return (
     <div className=" px-20 pb-20">
       <div>

@@ -50,7 +50,7 @@ function Crad() {
             <h1> محمد خسروی</h1>
           </div>
         </div>
-        <div className="text-black text-base flex flex-col gap-8 relative top-16 right-4 h-full ">
+        <div className="text-black text-base flex flex-col gap-6 relative top-16 right-4 h-full ">
           {cerad.map((item, index) => (
             <div key={index} className=" flex gap-2">
               <div>

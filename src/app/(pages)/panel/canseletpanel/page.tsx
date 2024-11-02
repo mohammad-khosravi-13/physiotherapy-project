@@ -18,7 +18,7 @@ function page() {
           <Crad />
         </div>
         <div className=" w-full">
-          <div className="">
+          <div>
             <input
               type="text"
               className=" relative  border-2 pr-12 bg-[#FCFCFC] rounded-[8px] w-[412px] h-[48px]"

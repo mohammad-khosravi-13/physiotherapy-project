@@ -4,7 +4,7 @@ import logout from "../../images/Logout.png";
 import profil from "../../images/mamad.jpg";
 import icon1 from "../../svg/Activity 1.svg";
 import icon2 from "../../svg/Document Justify  Right 1.svg";
-import icon3 from "../../svg/Calender 1.svg";
+import icon3 from "../../svg/Calender 2.svg";
 import icon4 from "../../svg/Chart.svg";
 import icon5 from "../../svg/Folder 1.svg";
 import icon6 from "../../svg/Group 3.svg";

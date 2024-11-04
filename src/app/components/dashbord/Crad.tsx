@@ -36,14 +36,14 @@ function Crad() {
   return (
     <div className="w-[186px] h-[972px] border-2 rounded-md flex flex-col justify-between">
       <div>
-        <div className=" flex flex-col   gap-2 text-black relative top-[20px]">
+        <div className=" flex flex-col items-center   gap-2 text-black relative top-[20px]">
           <div>
             <Image
               src={profil}
               alt="profil"
               width={80}
               height={80}
-              className="rounded-lg relative right-6 shadow-2xl"
+              className=" shadow-black shadow-sm rounded-2xl"
             />
           </div>
           <div className=" text-center">

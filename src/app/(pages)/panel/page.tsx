@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../../components/dashbord/Navbar";
-import Crad from "../../components/dashbord/Crad";
+import Navbar from "../../../components/dashbord/Navbar";
+import Crad from "../../../components/dashbord/Crad";
 import DashboardCards from "../../container/dashborde/DashboardCards";
 import NemodarCards from "../../container/dashborde/NemodarCards";
 

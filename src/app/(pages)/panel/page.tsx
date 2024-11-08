@@ -30,8 +30,7 @@ function page() {
             <NemodarCards />
           </div>
         </div>
-      </div>
-      hkedcbs
+      </div>  
     </div>
   );
 }

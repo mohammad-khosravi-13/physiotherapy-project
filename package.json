@@ -21,6 +21,7 @@
     "react-dom": "^18",
     "react-leaflet": "^4.2.1",
     "react-map-gl": "^7.1.7",
+    "react-multi-date-picker": "^4.5.2",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

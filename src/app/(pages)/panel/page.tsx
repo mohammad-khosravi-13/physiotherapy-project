@@ -30,6 +30,9 @@ function page() {
             <NemodarCards />
           </div>
         </div>
+        <div>
+          jdsvbd
+        </div>
       </div>  
     </div>
   );

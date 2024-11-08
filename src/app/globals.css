@@ -19,7 +19,8 @@
   font-style: normal;
 }
 body {
-  color: var(--foreground);
+  color:black;
+
   background: var(--background);
   font-family: 'kalame', Arial, Helvetica, sans-serif;
 }

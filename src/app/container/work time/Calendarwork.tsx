@@ -5,13 +5,13 @@ import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import DateObject from "react-date-object";
 const getDayStyle = (date: DateObject) => {
-  const day = date.toDate().getDay(); 
+  const day = date.toDate().getDay();
   if (day === 6) {
-    return { backgroundColor: "red", color: "white", fontWeight: "bold" }; 
+    return { backgroundColor: "red", color: "white", fontWeight: "bold" };
   }
-  return {}; 
+  return {};
 };
-const Calendarwork: React.FC = () => {
+const Calendar: React.FC = () => {
   const [value, setValue] = useState<DateObject>(new DateObject());
   const customLocale = {
     ...persian_fa,
@@ -56,4 +56,4 @@ const Calendarwork: React.FC = () => {
     </div>
   );
 };
-export default Calendarwork;
+export default Calendar;

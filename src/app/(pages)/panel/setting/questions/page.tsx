@@ -1,4 +1,4 @@
-import Tablebaners from "@/app/container/setting/baners/Tablebaners";
+import Tablequestion from "@/app/container/setting/question/Tablequestion";
 import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
 import React from "react";
@@ -11,10 +11,10 @@ function page() {
       </div>
       <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
         <div>
-          <Crad />
+          <Crad/>
         </div>
-        <div className="w-[80%] mt-12">
-          <Tablebaners />
+        <div className=" w-[100%] mt-12">
+          <Tablequestion/>
         </div>
       </div>
     </div>

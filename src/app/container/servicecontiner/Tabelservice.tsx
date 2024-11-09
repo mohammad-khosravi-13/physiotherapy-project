@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import justity from "@/svg/Document Justify  Right 3.svg"
+import justity from "@/svg/Document Justify  Right 1.svg"
 import close from "@/svg/Close.svg"
 function Tabelservice() {
   return (
     <div>
       <table className="min-w-full border-collapse rounded-t-2xl">
         <thead>
-          <tr className=" rounded-tr-2xl">
+          <tr className=" rounded-tr-2xl text-white">
             <th className=" px-4 py-2 rounded-tr-lg bg-[#4A4A4A]">ردیف</th>
             <th className=" px-4 py-2 bg-[#4A4A4A]">نام و نام خانوادگی</th>
             <th className=" px-4 py-2 bg-[#4A4A4A]">نام خدمت</th>

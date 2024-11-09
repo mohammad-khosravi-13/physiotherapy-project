@@ -1,7 +1,7 @@
 import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
 import Image from "next/image";
-import search from "../../../svg/Search 2.svg";
+import search from "@/svg/Search 2.svg";
 import React from "react";
 import Filtercontiner from "@/app/container/todaypanel/Filtercontiner";
 import Filterservice from "@/app/container/servicecontiner/Filterservice";
@@ -13,7 +13,7 @@ function page() {
       <div>
         <Navbar />
       </div>
-      <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
+      <div className=" w-[1248px] flex gap-9 h-[972px] m-auto  ">
         <div>
           <Crad />
         </div>

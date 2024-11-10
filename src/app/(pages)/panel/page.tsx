@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../../../components/dashbord/Navbar";
-import Crad from "../../../components/dashbord/Crad";
-import DashboardCards from "../../container/dashborde/DashboardCards";
-import NemodarCards from "../../container/dashborde/NemodarCards";
+import Navbar from "@/components/dashbord/Navbar";
+import Crad from "@/components/dashbord/Crad";
+import DashboardCards from "@/app/container/dashborde/DashboardCards";
+import NemodarCards from "@/app/container/dashborde/NemodarCards";
 
 function page() {
   const nemodar = [
@@ -30,7 +30,10 @@ function page() {
             <NemodarCards />
           </div>
         </div>
-      </div>
+        <div>
+          jdsvbd
+        </div>
+      </div>  
     </div>
   );
 }

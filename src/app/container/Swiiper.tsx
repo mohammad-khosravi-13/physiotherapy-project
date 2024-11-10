@@ -22,9 +22,9 @@ const Swiiper = () => {
       modules={[Pagination, Navigation, Autoplay]}
       className=" w-[1300px] h-[300px] relative   "
     >
-      <div className="flex justify-evenly ">
+      <div className="flex justify-evenly  ">
         <SwiperSlide>
-          <div className=" flex justify-evenly gap-5 pr-5 m-5 ">
+          <div className=" flex justify-evenly gap-5  p-2 mt-2 ">
             <div className="  w-[320px] h-[257px] ">
               <Image
                 className=" w-[320px] h-[257px] rounded-[8px]"

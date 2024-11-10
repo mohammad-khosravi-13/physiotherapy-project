@@ -8,7 +8,7 @@ import mahsol3 from "@/app/images/mahsol3.svg";
 import mahsol4 from "@/app/images/mahsol4.svg";
 import mahsol5 from "@/app/images/mahsol5.svg";
 import star from "@/app/images/Star 3.svg";
-import mahsol6 from "@/app/images/mahsol6.svg"
+import mahsol6 from "@/app/images/mahsol6.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -74,15 +74,13 @@ function Product() {
         loop
         modules={[Pagination, Navigation, Autoplay]}
         slidesPerView={5}
-        spaceBetween={10} 
+        spaceBetween={10}
         className="w-full"
-        style={{ height: "506px" }} 
+        style={{ height: "506px" }}
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="flex justify-center mr-20">
-            <div
-              className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200 w-[320px] h-[506px] "
-            >
+            <div className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200 w-[320px] h-[506px] ">
               <div className="flex justify-center mb-4">
                 <Image
                   src={product.image}
@@ -101,7 +99,10 @@ function Product() {
                 <div className="flex justify-between items-center">
                   <p className="text-[20px] -mt-4">قیمت</p>
                   <p className="text-gray-800 font-semibold mb-4">
-                    {product.price} <span className="text-[18px] pr-2 text-gray-500">تومان</span>
+                    {product.price}{" "}
+                    <span className="text-[18px] pr-2 text-gray-500">
+                      تومان
+                    </span>
                   </p>
                 </div>
                 <button className="bg-[#0974A2] text-white w-[288px] h-[48px] py-2 px-4 rounded-md text-[20px] transition-colors duration-200">

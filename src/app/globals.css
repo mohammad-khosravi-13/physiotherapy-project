@@ -20,10 +20,14 @@
 }
 body {
   color:black;
-
   background: var(--background);
   font-family: 'kalame', Arial, Helvetica, sans-serif;
 }
+
+input{
+  @apply bg-white 
+}
+
 
 @layer utilities {
   .text-balance {

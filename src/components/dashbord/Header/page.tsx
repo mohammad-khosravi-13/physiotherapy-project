@@ -25,46 +25,41 @@ function Header() {
   return (
     <>
       
-        <div className="h-[60px] flex justify-start items-center absolute md:w-[1440px] 2xl:w-[1440px]   w-[1440px]  bg-gradient-to-t from-[#39393988] to-[#D6D6D655] ">
-          <Image
-            className="mr-14"
-            src={Logo1}
-            alt="logo"
-            width={32}
-            height={66}
-          />
-          <div className="flex justify-center gap-12 pr-24 ">
-            <Link className="text-[#4A4A4A]" href={"/"}>
-              خانه
-            </Link>
-            <Link className="text-[#4A4A4A]" href={"services"}>
-              خدمات
-            </Link>
-            <Link className="text-[#4A4A4A]" href={"/about"}>
-              درباره ما
-            </Link>
-            <Link className="text-[#4A4A4A]" href={"/contact"}>
-              تماس با ما
-            </Link>
-            <Link className="text-[#4A4A4A]" href={"/blog"}>
-              بلاگ
-            </Link>
-            <Link className="text-[#4A4A4A]" href={"/search"}>
-              جستجو
-            </Link>
-          </div>
-          <div className=" pr-[400px]">
-            <div className="flex items-center gap-3 mr-32 ">
-              <Image src={Login1} alt="" width={24} height={24} />
-              <Link className="text-white" href={"/Login"}>
-                ورود{" "}
-              </Link>
-              <div className="h-6 border-l border-[#0974A2]"></div>
-
-              <Image src={Buy} alt="" width={24} height={24} className="mr-5" />
-            </div>
-          </div>
+      <div className="h-[60px] flex justify-between items-center bg-gradient-to-t from-[#39393988] to-[#D6D6D655] absolute md:w-[1440px] 2xl:w-[1440px]   w-[1440px] ">
+        <div className="mr-[96px]">
+          <Image src={Logo1} alt="logo" width={33} height={44} />
         </div>
+
+        <div className="flex justify-start gap-12 ml-[500px]">
+          <Link className="text-[#4A4A4A]" href={"/"}>
+            خانه
+          </Link>
+          <Link className="text-[#4A4A4A]" href={"services"}>
+            خدمات
+          </Link>
+          <Link className="text-[#4A4A4A]" href={"/about"}>
+            درباره ما
+          </Link>
+          <Link className="text-[#4A4A4A]" href={"/contact"}>
+            تماس با ما
+          </Link>
+          <Link className="text-[#4A4A4A]" href={"/blog"}>
+            بلاگ
+          </Link>
+          <Link className="text-[#4A4A4A]" href={"/search"}>
+            جستجو
+          </Link>
+        </div>
+
+        <div className="flex ml-[96px]  gap-3 ">
+          <Image src={Login1} alt="" width={24} height={24} />
+          <Link className="text-black" href={"/Login"}>
+            ورود
+          </Link>
+          <div className="h-6 border-l border-[#0974A2]"></div>
+          <Image src={Buy} alt="" width={24} height={24} className="mr-5" />
+        </div>
+      </div>
 
         <Image src={Rectangle} alt="" width={1440} height={559} className="" />
 
@@ -212,7 +207,7 @@ function Header() {
               height={17}
             />
             <h3>فیلم آموزشی</h3>
-            <div className="flex justify-end gap-2 mr-[1070px]">
+            <div className="flex justify-end gap-2 mr-[1050px]">
               <button className="text-[16px]" onClick={hadelClick}>
                 بیشتر
               </button>
@@ -251,3 +246,4 @@ function Header() {
 }
 
 export default Header;
+

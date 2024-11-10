@@ -104,7 +104,7 @@ export default function ReadBlogs() {
             <h3 className="text-[16px] text-[#070707] font-semibold mb-6">
               {Blog.titr}
             </h3>
-            <p className="text-[14px] text-[#4A4A4A] mb-4">{Blog.content}</p>
+            <p className="text-[14px] text-[#4A4A4A] mb-4 overflow-hidden line-clamp-2">{Blog.content}</p>
          
             <div className="flex justify-end">
 

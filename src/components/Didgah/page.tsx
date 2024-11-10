@@ -14,7 +14,7 @@ function Didgah() {
         <h3 className="text-[18px]">دیدگاه شما</h3>
       </div>
 
-      <div className="flex gap-4 mr-24 mt-10 flex-wrap">
+      <div className="flex gap-4 mr-24 mt-10 mb-8 flex-wrap">
         <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
           <div className="flex items-center justify-between p-5">
             <p className="text-[12px] text-[#4A4A4A]">1402/10/20</p>

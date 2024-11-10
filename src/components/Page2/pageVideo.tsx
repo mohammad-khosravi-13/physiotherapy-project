@@ -26,15 +26,12 @@ function PageVideo() {
   
   return (
     <>
-      <div className="h-[60px] flex justify-start items-center pr-14">
-        <Image
-          className="mr-14"
-          src={Logo1}
-          alt="logo"
-          width={32}
-          height={66}
-        />
-        <div className="flex justify-center gap-12 pr-24">
+      <div className="h-[60px] flex justify-between items-center  ">
+        <div className="mr-[96px]">
+          <Image src={Logo1} alt="logo" width={33} height={44} />
+        </div>
+
+        <div className="flex justify-start gap-12 ml-[400px] ">
           <Link className="text-[#4A4A4A]" href={"/"}>
             خانه
           </Link>
@@ -54,17 +51,15 @@ function PageVideo() {
             جستجو
           </Link>
         </div>
-        <div className="pr-[400px]">
-          <div className="flex items-center gap-3 mr-32">
-            <Image src={Login1} alt="" width={24} height={24} />
-            <Link className="text-black" href={"/Login"}>
-              ورود
-            </Link>
-            <div className="h-6 border-l border-[#0974A2]"></div>
-            <Image src={Buy} alt="" width={24} height={24} className="mr-5" />
-          </div>
+
+        <div className="flex  ml-[96px]  gap-3 ">
+          <Image src={Login1} alt="" width={24} height={24} />
+          <Link className="text-black" href={"/Login"}>
+            ورود
+          </Link>
+          <div className="h-6 border-l border-[#0974A2]"></div>
+          <Image src={Buy} alt="" width={24} height={24} className="mr-5" />
         </div>
-      
       </div>
       
 
@@ -75,7 +70,7 @@ function PageVideo() {
       <Swiper
         navigation
         pagination={{ clickable: true }}
-        loop
+        loop = {false}
         modules={[Pagination, Navigation]}
         className="w-[1300px] h-[600px] relative"
         

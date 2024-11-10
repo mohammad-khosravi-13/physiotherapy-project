@@ -10,15 +10,19 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "ag-charts-react": "^10.3.1",
+    "css-loader": "^7.1.2",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.7.0",
     "maplibre-gl": "^4.7.1",
-    "next": "14.2.16",
+    "next": "^14.2.16",
+    "postcss-loader": "^8.1.1",
     "react": "^18",
     "react-dom": "^18",
     "react-leaflet": "^4.2.1",
     "react-map-gl": "^7.1.7",
+    "react-multi-date-picker": "^4.5.2",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

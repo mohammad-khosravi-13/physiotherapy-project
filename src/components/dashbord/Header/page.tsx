@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Logo1 from "@/app/images/Logo 1.svg";
@@ -13,17 +14,18 @@ import vectortaghvim from "@/app/images/Vector taghvim.svg";
 import Swiiper from "@/app/container/Swiiper";
 import vectorfilm from "@/app/images/Vector film.svg";
 import axnobat from "@/app/images/axnobat.svg";
-import Product from "@/components/Product/page";
-import Bime from "@/components/Bimeh/page";
-import Soalat from "@/components/Soalat/page";
-import Didgah from "@/components/Didgah/page";
-import Footer from "@/components/Footer/page";
+import { useRouter } from "next/navigation";
+import vectorbishtar from "@/app/images/Vector bishtar.svg";
 
 function Header() {
+  const router = useRouter();
+  const hadelClick = () => {
+    router.push("/Video");
+  };
   return (
     <>
-      <div className="px-10">
-        <div className="h-[60px] flex justify-start items-center absolute  pr-10 w-[1440px]  bg-gradient-to-t from-[#39393988] to-[#D6D6D655] ">
+      
+        <div className="h-[60px] flex justify-start items-center absolute md:w-[1440px] 2xl:w-[1440px]   w-[1440px]  bg-gradient-to-t from-[#39393988] to-[#D6D6D655] ">
           <Image
             className="mr-14"
             src={Logo1}
@@ -31,7 +33,7 @@ function Header() {
             width={32}
             height={66}
           />
-          <div className="flex justify-center gap-12 pr-24">
+          <div className="flex justify-center gap-12 pr-24 ">
             <Link className="text-[#4A4A4A]" href={"/"}>
               خانه
             </Link>
@@ -99,7 +101,7 @@ function Header() {
         </div>
 
         <div className="flex flex-col mt-60  ">
-          <div className="bg-white flex justify-start items-center ">
+          <div className="bg-white flex justify-start items-center  ">
             <Image
               className="mr-24"
               src={vectorcalender}
@@ -201,7 +203,7 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="mr-24 flex items-center gap-5 mt-10">
+          <div className="pr-24 flex items-center gap-5 mt-10">
             <Image
               className=""
               src={vectorfilm}
@@ -210,15 +212,25 @@ function Header() {
               height={17}
             />
             <h3>فیلم آموزشی</h3>
+            <div className="flex justify-end gap-2 mr-[1070px]">
+              <button className="text-[16px]" onClick={hadelClick}>
+                بیشتر
+              </button>
+              <Image
+                className=""
+                src={vectorbishtar}
+                alt="Vector"
+                width={5}
+                height={11}
+              />
+            </div>
           </div>
           <Swiiper />
-          <div className="flex justify-center mt-5 relative ">
+          <div className="flex justify-center mt-5 relative    ">
             <Image
-              className=""
+              className="w-[1248px] h-[360px]"
               src={axnobat}
               alt="Vector"
-              width={1248}
-              height={360}
             />
             <div className="top-[72px]    absolute  left-[350px]  ">
               <h3 className="text-[28px] text-white">
@@ -233,7 +245,7 @@ function Header() {
             </div>
           </div>
         </div>
-      </div>
+
     </>
   );
 }

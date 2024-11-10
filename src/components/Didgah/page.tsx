@@ -3,8 +3,8 @@ import Image from "next/image";
 import didgah from "@/app/images/diadgah.svg";
 import score5 from "@/app/images/Score 5.svg";
 import man1box1 from "@/app/images/man1box1.svg";
-import man2box2 from "@/app/images/man2box2.svg"
-import woman3box3 from "@/app/images/woman3box3.svg"
+import man2box2 from "@/app/images/man2box2.svg";
+import woman3box3 from "@/app/images/woman3box3.svg";
 
 function Didgah() {
   return (
@@ -15,69 +15,70 @@ function Didgah() {
       </div>
 
       <div className="flex gap-4 mr-24 mt-10 flex-wrap">
-  <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
-    <div className="flex items-center justify-between p-5">
-      <p className="text-[12px] text-[#4A4A4A]">1402/10/20</p>
-      <Image src={score5} alt="Vector" width={66} height={10} />
-    </div>
-    <div className="flex justify-start gap-3 pr-5 items-center">
-      <Image
-        className="bg-orange-400 rounded-[4px]"
-        src={man1box1}
-        alt="Vector"
-        width={36}
-        height={36}
-      />
-      <h4 className="text-[14px] text-[#000000]">علی اکبری</h4>
-    </div>
-    <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
-      عالی بود همه چیز! <br />
-      آسیب کمرم درمان شد و محدودیت حرکتی ندارم. <br />
-      با تشکر از کلینیک سلامت
-    </p>
-  </div>
+        <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
+          <div className="flex items-center justify-between p-5">
+            <p className="text-[12px] text-[#4A4A4A]">1402/10/20</p>
+            <Image src={score5} alt="Vector" width={66} height={10} />
+          </div>
+          <div className="flex justify-start gap-3 pr-5 items-center">
+            <Image
+              className="bg-orange-400 rounded-[4px]"
+              src={man1box1}
+              alt="Vector"
+              width={36}
+              height={36}
+            />
+            <h4 className="text-[14px] text-[#000000]">علی اکبری</h4>
+          </div>
+          <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
+            عالی بود همه چیز! <br />
+            آسیب کمرم درمان شد و محدودیت حرکتی ندارم. <br />
+            با تشکر از کلینیک سلامت
+          </p>
+        </div>
 
-  <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
-    <div className="flex items-center justify-between p-5">
-      <p className="text-[12px] text-[#4A4A4A]">1402/10/18</p>
-      <Image src={score5} alt="Vector" width={66} height={10} />
-    </div>
-    <div className="flex justify-start gap-3 pr-5 items-center">
-      <Image
-        className="bg-green-400 rounded-[4px]"
-        src={man2box2}
-        alt="Vector"
-        width={36}
-        height={36}
-      />
-      <h4 className="text-[14px] text-[#000000]">حسین فضلی</h4>
-    </div>
-    <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
-    هم محیط آرام بود و هم پذیرش به موقع انجام شد. <br />
-    با تشکر
-    </p>
-  </div>
-  <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
-    <div className="flex items-center justify-between p-5">
-      <p className="text-[12px] text-[#4A4A4A]">1402/10/20</p>
-      <Image src={score5} alt="Vector" width={66} height={10} />
-    </div>
-    <div className="flex justify-start gap-3 pr-5 items-center">
-      <Image
-        className="bg-blue-500 rounded-[4px]"
-        src={woman3box3}
-        alt="Vector"
-        width={36}
-        height={36}
-      />
-      <h4 className="text-[14px] text-[#000000]">زهرا کیانی</h4>
-    </div>
-    <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
-    برخورد پرسنل خوب بود.
-    </p>
-  </div>
-</div>
+        <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
+          <div className="flex items-center justify-between p-5">
+            <p className="text-[12px] text-[#4A4A4A]">1402/10/18</p>
+            <Image src={score5} alt="Vector" width={66} height={10} />
+          </div>
+          <div className="flex justify-start gap-3 pr-5 items-center">
+            <Image
+              className="bg-green-400 rounded-[4px]"
+              src={man2box2}
+              alt="Vector"
+              width={36}
+              height={36}
+            />
+            <h4 className="text-[14px] text-[#000000]">حسین فضلی</h4>
+          </div>
+          <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
+            هم محیط آرام بود و هم پذیرش به موقع انجام شد. <br />
+            با تشکر
+          </p>
+        </div>
+        <div className="bg-[#FCFCFC] shadow-xl rounded-[8px] w-[320px] h-[176px]">
+          <div className="flex items-center justify-between p-5">
+            <p className="text-[12px] text-[#4A4A4A]">1402/10/20</p>
+            <Image src={score5} alt="Vector" width={66} height={10} />
+          </div>
+          <div className="flex justify-start gap-3 pr-5 items-center ">
+            <Image
+              className="bg-blue-500 rounded-[4px]"
+              src={woman3box3}
+              alt="Vector"
+              width={36}
+              height={36}
+            />
+            <h4 className="text-[14px] text-[#000000]">زهرا کیانی</h4>
+          </div>
+          <p className="pr-5 mt-3 text-[14px] text-[#4A4A4A]">
+            برخورد پرسنل خوب بود.
+          </p>
 
+         
+        </div>
+      </div>
     </>
   );
 }

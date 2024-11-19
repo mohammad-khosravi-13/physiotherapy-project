@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
 // import map from "../../images/map.svg";
@@ -9,14 +10,15 @@ import youtob from "@/app/images/vectorYoutob.svg";
 import call from "@/app/images/Call.svg";
 import email from "@/app/images/email.svg";
 import location from "@/app/images/location.svg";
-import Mape from "@/app/container/map/Mape";
+// import Mape from "@/app/container/map/Mape";
 import fizio from "@/app/images/کلینیکـــــــــ فیزیوتراپی سلامتــــــــــ.svg";
+const Mape = dynamic(() => import("@/app/container/map/Mape"), { ssr: false });
 
 function Footer() {
   return (
     <>
-      <div className="flex flex-col gap-7  bg-[#FCFCFC]">
-        <div className="flex flex-col items-center mt-[87px]">
+      <div className="flex flex-col gap-7   bg-[#FCFCFC] ">
+        <div className="flex flex-col items-center ">
           <div className="flex justify-between items-start w-full px-10 mt-20 gap-10">
             <div className="flex  items-center">
               <Image src={logo} alt="Vector" className="w-[150px] h-[196px]" />

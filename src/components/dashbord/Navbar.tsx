@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from "../../images/Logo 1.png";
+import logo from "@/svg/Logo 1.svg";
 import Image from "next/image";
-import Profile from "../../images/Profile 1.png";
+import Profile from "@/images/Profile 1.png";
 function Navbar() {
   return (
     <div className=" w-[1248px] m-auto flex justify-between items-center">

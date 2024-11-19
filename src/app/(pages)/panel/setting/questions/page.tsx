@@ -5,19 +5,17 @@ import React from "react";
 
 function page() {
   return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
+    <>
+      <Navbar />
       <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
         <div>
-          <Crad/>
+          <Crad />
         </div>
         <div className=" w-[100%] mt-12">
-          <Tablequestion/>
+          <Tablequestion />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -9,10 +9,8 @@ import Tabelpatinet from "@/app/container/patinetcontaner/Tabelpatinet";
 
 function page() {
   return (
-    <div>
-      <div>
+    <>
         <Navbar />
-      </div>
       <div className="w-[1248px] flex gap-9 h-[972px] m-auto">
         <div>
           <Crad />
@@ -39,7 +37,7 @@ function page() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

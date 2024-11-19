@@ -12,8 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      plugins: [
+        require("daisyui"),
+      ],
       boxShadow: {
-        custom: "0 10px 20px rgba(0, 0, 0, .5)",
+        custom: "0 10px 20px rgba(.1, .1, .1, .1)",
       },
     },
   },

@@ -5,7 +5,7 @@ import pattern from "@/svg/Pattern.svg";
 function page() {
 
   return (
-    <div>
+    <>
       <div>
         <Navbarprofile />
 
@@ -18,7 +18,7 @@ function page() {
           "
         />
       </div>
-    </div>
+    </>
   );
 }
 

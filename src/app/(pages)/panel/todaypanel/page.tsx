@@ -1,19 +1,16 @@
-import Crad from "@/components/dashbord/Crad"
+import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
 import Image from "next/image";
 import Filtercontiner from "@/app/container/todaypanel/Filtercontiner";
-import search from "@/svg/Search 2.svg"
+import search from "@/svg/Search 2.svg";
 import React from "react";
 import Tabelcontiner from "@/app/container/todaypanel/Tabelcontiner";
 import Filterkarbar from "@/app/container/todaypanel/Filterkarbar";
 
 function Page() {
   return (
-    <div >
-      <div>
-        <Navbar />
-      </div>
-
+    <>
+      <Navbar />
       <div className=" w-[83%] h-[97.2%] flex gap-9 mt-5  m-auto">
         <div>
           <Crad />
@@ -47,7 +44,7 @@ function Page() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

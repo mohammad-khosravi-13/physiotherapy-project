@@ -1,15 +1,13 @@
-import Crad from '@/components/dashbord/Crad';
-import Navbar from '@/components/dashbord/Navbar'
-import React from 'react'
-import Image from 'next/image';
-import search from "@/svg/Search 2.svg"
-import Tabelproduct from '@/app/container/product/Tabelproduct';
+import Crad from "@/components/dashbord/Crad";
+import Navbar from "@/components/dashbord/Navbar";
+import React from "react";
+import Image from "next/image";
+import search from "@/svg/Search 2.svg";
+import Tabelproduct from "@/app/container/product/Tabelproduct";
 function page() {
   return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
+    <>
+      <Navbar />
       <div className="w-[1248px] flex gap-9 h-[972px] m-auto">
         <div>
           <Crad />
@@ -37,8 +35,8 @@ function page() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export default page
+export default page;

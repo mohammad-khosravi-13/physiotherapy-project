@@ -1,5 +1,5 @@
+"use client"
 import React from 'react'
-
 function NemodarCards() {
      const nemodar = [
        { text: "خدمات منزل", color: "bg-[#34B53A]" },

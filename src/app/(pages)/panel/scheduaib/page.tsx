@@ -5,7 +5,7 @@ import React from "react";
 
 function page() {
   return (
-    <div>
+    <>
       <div>
         <Navbar />
       </div>
@@ -17,7 +17,7 @@ function page() {
           {/* <Taghvim /> */}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

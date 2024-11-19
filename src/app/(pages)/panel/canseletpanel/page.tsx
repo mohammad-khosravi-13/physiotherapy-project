@@ -9,10 +9,8 @@ import Tabelcanseled from "@/app/container/canseled/Tabelcanseled";
 
 function page() {
   return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
+    <>
+      <Navbar />
       <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
         <div>
           <Crad />
@@ -37,7 +35,7 @@ function page() {
             </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

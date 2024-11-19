@@ -10,30 +10,35 @@ function page() {
     { text: "خدمات کلینیک", color: "bg-[#FF3A29]" },
     { text: "محصولات", color: "bg-[#4339F2]" },
   ];
+
   return (
-    <div className=" px-20 pb-20">
+    <div className="px-5 md:px-10 lg:px-20 pb-20">
       <div>
         <Navbar />
       </div>
-      <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
-        <div>
+
+      <div className="flex flex-col lg:flex-row gap-9 h-auto lg:h-[972px] m-auto max-w-[1248px]">
+        <div className="flex-1">
           <Crad />
         </div>
-        <div className=" flex flex-col gap-10">
+
+    
+        <div className="flex-1 flex flex-col gap-10">
+      
           <div>
             <DashboardCards />
           </div>
-          <div className=" font-bold text-black">
+
+          <div className="font-bold text-black text-center lg:text-left">
             <p>گزارش مالی</p>
           </div>
+
+      
           <div>
             <NemodarCards />
           </div>
         </div>
-        <div>
-          jdsvbd
-        </div>
-      </div>  
+      </div>
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Bime1 from "@/app/SVG/Vector bime.svg";
-import bimetamin from "@/app/SVG/bime tamin.svg";
-import bimemoalem from "@/app/SVG/bime moalem.svg";
-import bimeasia from "@/app/SVG/bime asia.svg";
-import bimedana from "@/app/SVG/bime dana.svg";
-import bimesaman from "@/app/SVG/bime saman.svg";
-import bimesalamt from "@/app/SVG/bime salamat.svg";
-import bimepasargad from "@/app/SVG/bime pasargad.svg";
-import bimeiran from "@/app/SVG/bime iran.svg";
+import Bime1 from "@/svg/Vector bime.svg";
+import bimetamin from "@/svg/bime tamin.svg";
+import bimemoalem from "@/svg/bime moalem.svg";
+import bimeasia from "@/svg/bime asia.svg";
+import bimedana from "@/svg/bime dana.svg";
+import bimesaman from "@/svg/bime saman.svg";
+import bimesalamt from "@/svg/bime salamat.svg";
+import bimepasargad from "@/svg/bime pasargad.svg";
+import bimeiran from "@/svg/bime iran.svg";
 
 function Bime() {
   const bime = [
@@ -66,7 +66,7 @@ function Bime() {
           <div key={bime.id}>
             <div>
               <Image src={bime.image} alt={bime.name} width={100} height={98} />
-              <div className="mt-2 text-[16px] p-2 pr-5">{bime.name}</div>
+              <div className="mt-2 text-[16px] p-2 flex justify-center pr-5">{bime.name}</div>
             </div>
           </div>
         ))}

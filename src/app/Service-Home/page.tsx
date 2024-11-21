@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import khadamtclicic from "@/app/SVG/khadamatcilicnc.svg";
+import khadamtclicic from "@/svg/khadamatcilicnc.svg";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import QuestionCardHome from "../container/Service-Home/QuestionCardHome";
+import QuestionCardHome from "../../container/Service-Home/QuestionCardHome";
 
 function ServiceHome() {
   return (

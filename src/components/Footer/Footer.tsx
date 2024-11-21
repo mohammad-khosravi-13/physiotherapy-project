@@ -1,16 +1,16 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
-import logo from "@/app/SVG/Logo 1.svg";
-import telegram from "@/app/SVG/Vectortelegram.svg";
-import insta from "@/app/SVG/vectorInsta.svg";
-import whats from "@/app/SVG/vectorWhats.svg";
-import youtob from "@/app/SVG/vectorYoutob.svg";
-import call from "@/app/SVG/Call.svg";
-import email from "@/app/SVG/email.svg";
-import location from "@/app/SVG/location.svg";
-import fizio from "@/app/SVG/کلینیکـــــــــ فیزیوتراپی سلامتــــــــــ.svg";
-const Mape = dynamic(() => import("@/app/container/map/Mape"), { ssr: false });
+import logo from "@/svg/Logo 1.svg";
+import telegram from "@/svg/Vectortelegram.svg";
+import insta from "@/svg/vectorInsta.svg";
+import whats from "@/svg/vectorWhats.svg";
+import youtob from "@/svg/vectorYoutob.svg";
+import call from "@/svg/Call.svg";
+import email from "@/svg/email.svg";
+import location from "@/svg/location.svg";
+import fizio from "@/svg/fizioclinic.svg";
+const Mape = dynamic(() => import("@/container/map/Mape"), { ssr: false });
 
 function Footer() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import didgah from "@/app/SVG/diadgah.svg";
-import score5 from "@/app/SVG/Score 5.svg";
-import man1box1 from "@/app/SVG/man1box1.svg";
-import man2box2 from "@/app/SVG/man2box2.svg";
-import woman3box3 from "@/app/SVG/woman3box3.svg";
+import didgah from "@/svg/diadgah.svg";
+import score5 from "@/svg/Score 5.svg";
+import man1box1 from "@/svg/man1box1.svg";
+import man2box2 from "@/svg/man2box2.svg";
+import woman3box3 from "@/svg/woman3box3.svg";
 
 function Didgah() {
   return (

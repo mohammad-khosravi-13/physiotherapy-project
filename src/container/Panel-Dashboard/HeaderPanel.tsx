@@ -1,16 +1,19 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import Logo1 from "@/svg/Logo 1.svg";
-import Login1 from "@/svg/Login 1.svg";
+import Image from 'next/image'
+import logo from "@/svg/Logo 1.svg"
+import vectorpanel from "@/svg/Vectorpanel.svg";
 import Buy from "@/svg/Buy.svg";
 
-export default function Header() {
+
+export default function HeaderPanel() {
   return (
-        <>
-        <nav className="h-[60px] flex justify-between items-center  w-[1440px]  ">
+    <>
+    
+    
+    <nav className="h-[60px] flex justify-between items-center  w-[1440px]  ">
         <Image
-          src={Logo1}
+          src={logo}
           alt="logo"
           width={33}
           height={44}
@@ -38,19 +41,18 @@ export default function Header() {
           </Link>
         </section>
         <Image
-          src={Login1}
+          src={vectorpanel}
           alt="login"
-          width={24}
-          height={24}
+          width={15}
+          height={20}
           className="mr-44"
         />
-        <Link className="text-black" href={"/Login"}>
-          <span>ورود</span>
-        </Link>
+
         <div className="h-6 border-l border-[#0974A2]"></div>
 
         <Image src={Buy} alt="" width={24} height={24} className="ml-[91px]" />
       </nav>
-        </>
+    </>
+
   )
 }

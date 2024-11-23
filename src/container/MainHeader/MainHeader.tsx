@@ -5,16 +5,17 @@ import Logo1 from "@/svg/Logo 1.svg";
 import Login1 from "@/svg/Login 1.svg";
 import Buy from "@/svg/Buy.svg";
 
-export default function Header() {
+export default function MainHeader() {
   return (
-        <>
-        <nav className="h-[60px] flex justify-between items-center  w-[1440px]  ">
+
+    <>
+<nav className="h-[60px]  backdrop-blur-sm  flex justify-between items-center absolute w-[1440px] bg-gradient-to-l  to-slate-100 ">
         <Image
           src={Logo1}
           alt="logo"
           width={33}
           height={44}
-          className="mr-[91px] "
+          className="mr-[91px]  "
         />
         <section className="flex justify-start gap-16 ml-[300px]">
           <Link className="text-[#4A4A4A]" href={"/"}>
@@ -51,6 +52,6 @@ export default function Header() {
 
         <Image src={Buy} alt="" width={24} height={24} className="ml-[91px]" />
       </nav>
-        </>
+    </>
   )
 }

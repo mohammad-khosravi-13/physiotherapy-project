@@ -5,13 +5,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import film1 from "../images/film 1.svg";
-import film2 from "../images/film 2.svg";
-import film3 from "../images/film3.svg";
-import film4 from "../images/film4.svg";
-import film5 from "../images/film5.svg";
-import film6 from "../images/film6.svg";
-import film7 from "../images/film7.svg";
+import film1 from "@/app/SVG/film 1.svg";
+import film2 from "@/app/SVG/film 2.svg";
+import film3 from "@/app/SVG/film3.svg";
+import film4 from "@/app/SVG/film4.svg";
+import film5 from "@/app/SVG/film5.svg";
+import film6 from "@/app/SVG/film6.svg";
+import film7 from "@/app/SVG/film6.svg";
 
 const Swiiper = () => {
   return (
@@ -24,7 +24,7 @@ const Swiiper = () => {
     >
       <div className="flex justify-evenly  ">
         <SwiperSlide>
-          <div className=" flex justify-evenly gap-5  p-2 mt-2 ">
+          <div className=" flex justify-evenly gap-7  p-2 mt-2 ">
             <div className="  w-[320px] h-[257px] ">
               <Image
                 className=" w-[320px] h-[257px] rounded-[8px]"
@@ -56,7 +56,7 @@ const Swiiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" flex justify-evenly  gap-5 pr-5 m-5  ">
+          <div className=" flex justify-evenly  gap-7   mt-2  ">
             <div className="  w-[320px] h-[256px]">
               <Image
                 className=" w-[320px] h-[257px] rounded-[8px]"

@@ -9,13 +9,9 @@ function page() {
     <>
       <Navbar />
       <div className=" w-[1248px] flex gap-9 h-[972px] m-auto ">
-        <div>
-          <Crad />
-        </div>
+        <Crad />
         <div className="w-full">
-          <div>
-            <Addadmin />
-          </div>
+          <Addadmin />
           <Tabeladmin />
         </div>
       </div>

@@ -1,8 +1,24 @@
-import PageVideo from '@/components/Page2/pageVideo'
-import React from 'react'
+"use client";
+import React from "react";
+import Image from "next/image";
+import famefilm from "@/app/SVG/Frame film.svg";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import FrameFilm from "../container/Video/FrameFilm";
 
-export default function page() {
+function Video() {
   return (
-    <PageVideo/>
-  )
+    <>
+      <Header />
+
+      <div className="flex justify-center">
+        <Image src={famefilm} alt="" className="w-[1253px] h-[80px]" />
+      </div>
+
+      <FrameFilm />
+      <Footer />
+    </>
+  );
 }
+
+export default Video;

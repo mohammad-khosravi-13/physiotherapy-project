@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/dashbord/Navbar";
 import Crad from "@/components/dashbord/Crad";
-import DashboardCards from "@/app/container/dashborde/DashboardCards";
+import DashboardCards from "@/container/dashborde/DashboardCards";
 import Chertpanel from "@/app/container/dashborde/Chertpanel";
 
 function page() {

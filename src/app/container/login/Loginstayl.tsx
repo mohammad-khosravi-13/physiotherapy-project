@@ -3,23 +3,20 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation } from "react-query";
 import { login } from "@/../services/api";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 import logo from "@/svg/Logo 1.svg";
 import Image from "next/image";
 
 function Loginstayl() {
-
   const router = useRouter();
-
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
-
   const [modalOpen, setModalOpen] = useState(false);
   const [codeModal, setCodeModal] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const closeModalCode = () => setCodeModal(false);
+
   const openCodeModal = () => {
     setModalOpen(false);
     setCodeModal(true);
@@ -33,10 +30,12 @@ function Loginstayl() {
         text: "لاگین موفقیت‌آمیز بود!",
         icon: "success",
         confirmButtonText: "باشه",
+      }).then(() => {
+        router.push("/panel");
       });
     },
     onError: () => {
-     Swal.fire({
+      Swal.fire({
         title: "خطای بارگزاری",
         text: "ورود ناموفق!",
         icon: "error",
@@ -57,19 +56,18 @@ function Loginstayl() {
     }
   };
 
-
   const handelPassword = () => {
-    if (password === "1111") {
-      router.push("/panel")
+    if (password) {
+      router.push("/panel");
     }
+
     if (password === "") {
-       Swal.fire({
-         title: " فیلد هارا پر کنید",
-         icon: "warning",
-         confirmButtonText: "باشه",
-       });
+      Swal.fire({
+        title: " فیلد هارا پر کنید",
+        icon: "warning",
+        confirmButtonText: "باشه",
+      });
     } else {
-      
       Swal.fire({
         title: "رمز نامعتبر!",
         icon: "error",

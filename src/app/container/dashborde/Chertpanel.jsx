@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Productsuperior from "@/app/container/dashborde/Productsuperior";
+import Productsuperior from "@/container/dashborde/Productsuperior";
 import {
   LineChart,
   Line,

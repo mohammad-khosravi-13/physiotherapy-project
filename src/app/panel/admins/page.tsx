@@ -1,7 +1,7 @@
 import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
-import Addadmin from "@/app/container/admin/Addadmin";
-import Tabeladmin from "@/app/container/admin/Tabeladmin";
+import Addadmin from "@/container/admin/Addadmin";
+import Tabeladmin from "@/container/admin/Tabeladmin";
 import React from "react";
 
 function page() {

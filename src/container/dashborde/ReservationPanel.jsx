@@ -3,13 +3,8 @@ import React from "react";
 import {
   LineChart,
   Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
   ResponsiveContainer,
   Area,
-  defs,
 } from "recharts";
 
 function ReservationPanel() {

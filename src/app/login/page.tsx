@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Loginstayl from '../container/login/Loginstayl'
+import Loginstayl from '@/container/login/Loginstayl'
 
 function page() {
   return (

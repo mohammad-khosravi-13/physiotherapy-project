@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import khadamtclicic from "@/app/SVG/khadamatcilicnc.svg";
-import vectorcalender from "@/app/SVG/Vectorcalender.svg";
-import vectorcomments from "@/app/SVG/Vectorcomments.svg";
-import khadamatpic1 from "@/app/SVG/khadamatpic1.svg";
-import khadamatpic2 from "@/app/SVG/khadamtpic2.svg";
-import khadamatpic3 from "@/app/SVG/khadamtpic3.svg";
-import khadamatpic4 from "@/app/SVG/khadamatpic4.svg";
-import khadamatpic5 from "@/app/SVG/khadamtpic5.svg";
-import khadamatpic6 from "@/app/SVG/khadamtpic6.svg";
-import khadamatpic7 from "@/app/SVG/khadamatpic7.svg";
-import khadamatpic8 from "@/app/SVG/khadamatpic8.svg";
-import khadamatpic9 from "@/app/SVG/khadamtpic9.svg";
-import khadamatpic10 from "@/app/SVG/khadamtpic10.svg";
+import khadamtclicic from "@/svg/khadamatcilicnc.svg";
+import vectorcalender from "@/svg/Vectorcalender.svg";
+import vectorcomments from "@/svg/Vectorcomments.svg";
+import khadamatpic1 from "@/svg/khadamatpic1.svg";
+import khadamatpic2 from "@/svg/khadamatpic2.svg";
+import khadamatpic3 from "@/svg/khadamtpic3.svg";
+import khadamatpic4 from "@/svg/khadamatpic4.svg";
+import khadamatpic5 from "@/svg/khadamtpic5.svg";
+import khadamatpic6 from "@/svg/khadamtpic6.svg";
+import khadamatpic7 from "@/svg/khadamatpic7.svg";
+import khadamatpic8 from "@/svg/khadamatpic8.svg";
+import khadamatpic9 from "@/svg/khadamtpic9.svg";
+import khadamatpic10 from "@/svg/khadamtpic10.svg";
 
 export default function QuestionCard() {
   const Blogs = [
@@ -113,7 +113,7 @@ export default function QuestionCard() {
       {Blogs.map((Blog) => (
         <div
           key={Blog.id}
-          className="flex bg-[#F7F7F7] p-4 rounded-md shadow-md hover:shadow-xl transition-shadow"
+          className="flex bg-[#F7F7F7] p-4 rounded-md shadow-md hover:shadow-lg transition-shadow"
         >
           <div className="flex flex-col items-center justify-between">
             <Image
@@ -147,7 +147,7 @@ export default function QuestionCard() {
             </p>
 
             <div className="flex justify-end mt-5">
-              <button className="text-white bg-[#FF7A00] w-[126px] h-[41px] rounded-[8px] text-[16px] hover:bg-white border-[2px] border-[#FF7A00] hover:text-[#FF7A00]">
+              <button className= "btn text-white bg-[#FF7A00] w-[126px] h-[41px] rounded-[8px] text-[16px] hover:bg-white border-[2px] border-[#FF7A00] hover:text-[#FF7A00]">
                 مطالعه
               </button>
             </div>

@@ -39,7 +39,7 @@ export default function Form() {
               className="border border-gray-300 rounded-[8px] w-[480px] h-[56px] p-4 shadow-md"
             />
 
-            <button className=" absolute right-[392px] bg-[#269200] text-white -mt-14 rounded-[8px] w-[89px] h-[56px] ">
+            <button className=" btn absolute right-[392px] bg-[#269200] text-white -mt-14 rounded-[8px] w-[89px] h-[56px] ">
               تایید ایمیل
             </button>
           </div>
@@ -51,7 +51,7 @@ export default function Form() {
           />
         </div>
         <div>
-          <button className="w-[150px] h-[45px]  rounded-[8px] text-[16px]  border-[2px] border-[#269200] mr-[30px] mt-20 mb-32">
+          <button className="btn w-[150px] h-[45px]  rounded-[8px] text-[16px]  border-[2px] border-[#269200] mr-[30px] mt-20 mb-32">
             ذخیره اطلاعات
           </button>
         </div>
@@ -59,7 +59,7 @@ export default function Form() {
       <div className="h-[556px] border-l-2 mr-14 border-[#0974A2] ml-24 mt-28"></div>
       <div className="w-1/2  ">
         <div className="flex justify-end ml-24 mt-5">
-          <button className=" bg-[#0974A2] w-[181px] h-[48px] rounded-[8px] text-white">
+          <button className=" btn bg-[#0974A2] w-[181px] h-[48px] rounded-[8px] text-white">
             رزرو آنلاین نوبت
           </button>
         </div>

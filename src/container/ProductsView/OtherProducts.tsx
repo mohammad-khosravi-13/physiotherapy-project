@@ -6,12 +6,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import mahsol1 from "@/app/SVG/mahsol 1.svg";
-import mahsol2 from "@/app/SVG/mahsol2.svg";
-import mahsol3 from "@/app/SVG/mahsol3.svg";
-import mahsol4 from "@/app/SVG/mahsol4.svg";
-import mahsol5 from "@/app/SVG/mahsol5.svg";
-import star from "@/app/SVG/Star 3.svg";
+import mahsol1 from "@/svg/mahsol10.svg";
+import mahsol2 from "@/svg/mahsol2.svg";
+import mahsol3 from "@/svg/mahsol3.svg";
+import mahsol4 from "@/svg/mahsol4.svg";
+import mahsol5 from "@/svg/mahsol5.svg";
+import star from "@/svg/Star 3.svg";
 import Image from "next/image";
 import Didgah from "@/components/Didgah/Didgah";
 import Footer from "@/components/Footer/Footer";
@@ -96,7 +96,7 @@ export default function OtherProducts() {
                     </span>
                   </p>
                 </div>
-                <button className="bg-[#0974A2] text-white w-[288px] h-[48px] py-2 px-4 rounded-md text-[20px] transition-colors duration-200">
+                <button className=" btn bg-[#0974A2] text-white w-[288px] h-[48px] py-2 px-4 rounded-md text-[20px] transition-colors duration-200">
                   افزودن
                 </button>
               </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo1 from "@/app/SVG/Logo 1.svg";
-import Login1 from "@/app/SVG/Login 1.svg";
-import Buy from "@/app/SVG/Buy.svg";
+import Logo1 from "@/svg/Logo 1.svg";
+import Login1 from "@/svg/Login 1.svg";
+import Buy from "@/svg/Buy.svg";
 
 export default function Header() {
   return (

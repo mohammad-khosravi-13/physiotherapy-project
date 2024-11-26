@@ -1,22 +1,18 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import famefilm from "@/app/SVG/Frame film.svg";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import FrameFilm from "../container/Video/FrameFilm";
+"use client"
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import FrameFilm from '@/container/Video/FrameFilm'
+import TitrVideo from '@/container/Video/TitrVideo'
+import React from 'react'
 
-function Video() {
-  return (
+export default function Video() {
+
+return (
     <>
       <Header />
-
-      <div className="flex justify-center">
-        <Image src={famefilm} alt="" className="w-[1253px] h-[80px]" />
-      </div>
-
-      <FrameFilm />
-      <Footer />
+      <TitrVideo/>
+      <FrameFilm/>
+      <Footer/>
     </>
   );
 }

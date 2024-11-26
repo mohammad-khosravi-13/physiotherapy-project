@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import FormContent from "../container/Register/FormContent";
-import InformationForm from "../container/Register/InformationForm";
+import FormContent from "../../container/Register/FormContent";
+import InformationForm from "../../container/Register/InformationForm";
 
 export default function Register() {
   return (
@@ -21,7 +21,7 @@ export default function Register() {
           <input type="radio" />
           <h3>پذیرش قوانین مرکز</h3>
         </div>
-        <button className="bg-[#269200] text-white px-6 py-2 rounded-lg">
+        <button className="btn bg-[#269200] text-white px-6 py-2 rounded-lg">
           ثبت
         </button>
       </div>

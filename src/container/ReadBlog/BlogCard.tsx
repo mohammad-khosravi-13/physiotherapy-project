@@ -1,12 +1,12 @@
 import React from 'react'
-import blog2 from "@/app/SVG/blog2.svg";
-import blog3 from "@/app/SVG/blog3.svg";
-import blog4 from "@/app/SVG/blog4.svg";
-import footblog from "@/app/SVG/footblog.svg";
-import oldmanblog from "@/app/SVG/oldmanblog.svg";
+import blog2 from "@/svg/blog2.svg";
+import blog3 from "@/svg/blog3.svg";
+import blog4 from "@/svg/blog4.svg";
+import footblog from "@/svg/footblog.svg";
+import oldmanblog from "@/svg/oldmanblog.svg";
 import Image from 'next/image';
-import vectorcomments from "@/app/SVG/Vectorcomments.svg";
-import vectorcalender from "@/app/SVG/Vectorcalender.svg";
+import vectorcomments from "@/svg/Vectorcomments.svg";
+import vectorcalender from "@/svg/Vectorcalender.svg";
 
 
 
@@ -69,7 +69,7 @@ export default function BlogCard() {
             {Blogs.map((Blog) => (
               <div
                 key={Blog.id}
-                className="flex bg-[#F7F7F7] p-4 rounded-md shadow-md w-[538px] h-[217px] mr-[55px]"
+                className="flex bg-[#F7F7F7] p-3 rounded-md shadow-md w-[538px] h-[217px] mr-[55px]"
               >
                 <div className="flex flex-col items-center justify-between">
                   <Image
@@ -104,7 +104,7 @@ export default function BlogCard() {
                   </p>
 
                   <div className="flex justify-end ">
-                    <button className="text-white bg-[#FF7A00] w-[126px] h-[41px] rounded-[8px] text-[16px] hover:bg-white border-[2px] border-[#FF7A00] hover:text-[#FF7A00] mt-5">
+                    <button className="btn text-white bg-[#FF7A00] w-[126px] h-[41px] rounded-[8px] text-[16px] hover:bg-white border-[2px] border-[#FF7A00] hover:text-[#FF7A00] mt-5">
                       مطالعه
                     </button>
                   </div>

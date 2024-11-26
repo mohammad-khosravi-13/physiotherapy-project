@@ -5,13 +5,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import film1 from "@/app/SVG/film 1.svg";
-import film2 from "@/app/SVG/film 2.svg";
-import film3 from "@/app/SVG/film3.svg";
-import film4 from "@/app/SVG/film4.svg";
-import film5 from "@/app/SVG/film5.svg";
-import film6 from "@/app/SVG/film6.svg";
-import film7 from "@/app/SVG/film6.svg";
+import film1 from "@/svg/film 1.svg";
+import film2 from "@/svg/film 2.svg";
+import film3 from "@/svg/film3.svg";
+import film4 from "@/svg/film4.svg";
+import film5 from "@/svg/film5.svg";
+import film6 from "@/svg/film6.svg";
+import film7 from "@/svg/film7.svg";
 
 const Swiiper = () => {
   return (

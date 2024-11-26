@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from "@/app/SVG/Logo 1.svg"
-import vectorpanel from "@/app/SVG/Vectorpanel.svg";
-import Buy from "@/app/SVG/Buy.svg";
+import logo from "@/svg/Logo 1.svg"
+import vectorpanel from "@/svg/Vectorpanel.svg";
+import Buy from "@/svg/Buy.svg";
 
 
 export default function HeaderPanel() {

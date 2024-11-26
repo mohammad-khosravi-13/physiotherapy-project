@@ -9,6 +9,7 @@ import mahsol4 from "@/svg/mahsol4.svg";
 import mahsol5 from "@/svg/mahsol5.svg";
 import star from "@/svg/Star 3.svg";
 import mahsol6 from "@/svg/mahsol6.svg";
+import mahsol9 from "@/svg/mahsol9.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -42,10 +43,10 @@ function Product() {
     },
     {
       id: 4,
-      name: "ویت کاف",
+      name: "توپ ژله ایی",
       price: "435,000",
       rating: "5",
-      image: mahsol4,
+      image: mahsol9,
     },
     {
       id: 5,

@@ -1,18 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
-import editvector from "@/app/SVG/Editvector.svg";
-import reservrpic from "@/app/SVG/reservepic.svg";
-import CalendarReserve from "@/app/container/CalenderReserve/Calenderrivers";
-import vectoralert from "@/app/SVG/Vectoralert.svg";
-
+import React from "react";
+import Image from "next/image";
+import editvector from "@/svg/Editvector.svg";
+import reservrpic from "@/svg/reservepic.svg";
+import CalendarReserve from "@/container/CalenderReserve/Calenderrivers";
+import vectoralert from "@/svg/Vectoralert.svg";
 
 export default function ReserveContent() {
   return (
-
     <>
-    
-    
-    <div className="flex justify-start items-center gap-2 mr-20 mt-[130px]">
+      <div className="flex justify-start items-center gap-2 mr-20 mt-[130px]">
         <Image
           src={editvector}
           alt=""
@@ -58,5 +54,5 @@ export default function ReserveContent() {
         </div>
       </div>
     </>
-  )
+  );
 }

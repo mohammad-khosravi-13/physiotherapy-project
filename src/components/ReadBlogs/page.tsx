@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import blog1 from "@/app/images/blog1.svg";
-import blog2 from "@/app/images/blog2.svg";
-import blog3 from "@/app/images/blog3.svg";
-import blog4 from "@/app/images/blog4.svg";
-import vectorcalender from "@/app/images/Vectorcalender.svg";
-import vectorcomments from "@/app/images/Vectorcomments.svg";
+import blog1 from "@/svg/blog1.svg";
+import blog2 from "@/svg/blog2.svg";
+import blog3 from "@/svg/blog3.svg";
+import blog4 from "@/svg/blog4.svg";
+import vectorcalender from "@/svg/Vectorcalender.svg";
+import vectorcomments from "@/svg/Vectorcomments.svg";
 
 
 

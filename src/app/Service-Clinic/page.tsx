@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import khadamtclicic from "@/app/SVG/khadamatcilicnc.svg";
+import khadamtclicic from "@/svg/khadamatcilicnc.svg";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import QuestionCard from "../container/Service-Clinic/QuestionCard";
+import QuestionCard from "../../container/Service-Clinic/QuestionCard";
 
 function ServiceClinic() {
   return (

@@ -1,10 +1,10 @@
 import Header from "@/components/Header/Header";
 import React from "react";
 import Image from "next/image";
-import prframe from "@/app/SVG/Rectangle Frame.svg";
-import ProductContent from "@/app/container/ProductsView/ProductContent";
-import ExplainProducts from "@/app/container/ProductsView/ExplainProducts";
-import OtherProducts from "@/app/container/ProductsView/OtherProducts";
+import prframe from "@/svg/Rectangle Frame.svg";
+import ProductContent from "@/container/ProductsView/ProductContent";
+import ExplainProducts from "@/container/ProductsView/ExplainProducts";
+import OtherProducts from "@/container/ProductsView/OtherProducts";
 
 export default function Products() {
   return (

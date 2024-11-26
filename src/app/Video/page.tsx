@@ -1,8 +1,18 @@
-import PageVideo from '@/components/Page2/pageVideo'
+"use client"
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import FrameFilm from '@/container/Video/FrameFilm'
+import TitrVideo from '@/container/Video/TitrVideo'
 import React from 'react'
 
-export default function page() {
-  return (
-    <PageVideo/>
-  )
+export default function Video() {
+
+return (
+    <>
+      <Header />
+      <TitrVideo/>
+      <FrameFilm/>
+      <Footer/>
+    </>
+  );
 }

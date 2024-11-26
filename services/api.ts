@@ -12,7 +12,7 @@ export const login = async (loginData: {
 }): Promise<LoginResponse> => {
   try {
     const response = await axios.post(
-      "https://afshar.pythonanywhere.com/accounts/login/password",
+      "https://afshar.pythonanywhere.com/accounts/login/password/",
       loginData
     );
     return response.data;

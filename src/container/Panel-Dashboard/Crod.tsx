@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import panelimage from "@/app/SVG/panelimage.svg";
-import paneletlaat from "@/app/SVG/paneletelaat.svg";
-import panelparvande from "@/app/SVG/panelparvande.svg";
-import panelsefareshat from "@/app/SVG/panelsefareshat.svg";
-import panelpayam from "@/app/SVG/panelpayam.svg";
-import panelamniyat from "@/app/SVG/panelamniyat.svg";
-import paneleeelanat from "@/app/SVG/paneleelanat.svg";
-import exit from "@/app/SVG/exit.svg";
+import panelimage from "@/svg/panelimage.svg";
+import paneletlaat from "@/svg/paneletelaat.svg";
+import panelparvande from "@/svg/panelparvande.svg";
+import panelsefareshat from "@/svg/panelsefareshat.svg";
+import panelpayam from "@/svg/panelpayam.svg";
+import panelamniyat from "@/svg/panelamniyat.svg";
+import paneleeelanat from "@/svg/paneleelanat.svg";
+import exit from "@/svg/exit.svg";
 
 export default function Crod() {
   return (
@@ -54,7 +54,7 @@ export default function Crod() {
               </li>
             </ul>
 
-            <button className="mt-40 w-[144px] h-[45px] bg-[#FF4D4D] text-white py-2 rounded-lg flex items-center justify-center gap-2">
+            <button className="btn mt-32 w-[144px] h-[45px] bg-[#FF4D4D] text-white py-2 rounded-lg flex items-center justify-center gap-2">
               <Image src={exit} alt="" width={18} height={18} />
 
               <span>خروج</span>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Calenderrivers from "../CalenderReserve/Calenderrivers";
-import vectoralert from "@/app/SVG/Vectoralert.svg";
+import vectoralert from "@/svg/Vectoralert.svg";
 
 export default function Select() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,16 +26,16 @@ export default function Select() {
           <h3 className="text-[18px] text-[#000000]">نام خدمات</h3>
           <div className="ml-16 w-[400px] relative">
             <div
-              className={`rounded-[8px] bg-base-200 h-[48px] cursor-pointer flex items-center justify-between px-4 ${
+              className={`rounded-[8px] bg-base-200 h-[48px]  cursor-pointer flex items-center justify-between  px-4 ${
                 isOpen ? "bg-[#f0f0f0]" : ""
               }`}
               onClick={toggleAccordion}
             >
-              <div className="text-[16px] text-[#616161] font-medium">
+              <div className="text-[16px] text-[#616161] font-medium ">
                 کلیک کنید
               </div>
               <div
-                className={`transform transition-transform ${
+                className={`transform transition-transform  ${
                   isOpen ? "rotate-180" : "rotate-0"
                 }`}
               >
@@ -52,7 +52,7 @@ export default function Select() {
             </div>
 
             {isOpen && (
-              <div className="absolute top-[50px] left-0 w-full bg-white rounded-b-[8px] shadow-md px-4 py-2 z-10">
+              <div className="absolute  top-[50px] left-0 w-full bg-white rounded-b-[8px] shadow-md px-4 py-2 z-10">
                 <p>لیزر کم توان</p>
               </div>
             )}

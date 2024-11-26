@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import soal from "@/app/SVG/Vector soal.svg";
-import man from "@/app/SVG/Man 1.svg";
+import soal from "@/svg/Vector soal.svg";
+import man from "@/svg/Man 1.svg";
 
 function Soalat() {
   const faq = [

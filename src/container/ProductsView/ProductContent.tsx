@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import mahsol3 from "@/app/SVG/mahsol3.svg";
-import star from "@/app/SVG/Star 3.svg";
-import vectorcomments from "@/app/SVG/Vectorcomments.svg";
+import mahsol3 from "@/svg/mahsol3.svg";
+import star from "@/svg/Star 3.svg";
+import vectorcomments from "@/svg/Vectorcalender.svg";
 
 export default function ProductContent() {
   return (
@@ -35,7 +35,7 @@ export default function ProductContent() {
 
         <div className="flex items-center mr-[1070px] -mt-[170px] flex-col space-y-5 ">
           <p>435,000 تومان</p>
-          <button className="bg-[#FF7A00] w-[131px] h-[48px] rounded-[8px] text-white ">
+          <button className= " btn bg-[#FF7A00] w-[131px] h-[48px] rounded-[8px] text-white ">
             افزودن
           </button>
         </div>

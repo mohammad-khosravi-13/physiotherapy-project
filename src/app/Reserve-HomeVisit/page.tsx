@@ -1,11 +1,11 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import editvector from "@/app/SVG/Editvector.svg";
-import reservrpic from "@/app/SVG/reservepic.svg";
+import editvector from "@/svg/Editvector.svg";
+import reservrpic from "@/svg/reservepic.svg";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import Select from "../container/Reserve-HomeVisit/Select";
+import Select from "../../container/Reserve-HomeVisit/Select";
 
 function ReserveHomeVisit() {
   return (

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import QuestionCardHome from "../../container/Service-Home/QuestionCardHome";
 
-function ServiceHome() {
+function servicehome() {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ function ServiceHome() {
   );
 }
 
-export default ServiceHome;
+export default servicehome;

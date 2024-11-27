@@ -3,7 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import MainProducts from "../../container/MainProducts/MainProducts";
 
-function Products() {
+function products() {
   return (
     <>
       <Header />
@@ -15,4 +15,4 @@ function Products() {
   
 }
 
-export default Products;
+export default products;

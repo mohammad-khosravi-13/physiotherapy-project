@@ -4,7 +4,7 @@ import Crod from "@/container/Panel-Dashboard/Crod";
 import HeaderPanel from "@/container/Panel-Dashboard/HeaderPanel";
 import React from "react";
 
-export default function PanelDashboard() {
+export default function paneldashboard() {
   return (
     <>
       <HeaderPanel />

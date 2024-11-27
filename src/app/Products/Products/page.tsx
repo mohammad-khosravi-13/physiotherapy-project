@@ -6,7 +6,7 @@ import ProductContent from "@/container/ProductsView/ProductContent";
 import ExplainProducts from "@/container/ProductsView/ExplainProducts";
 import OtherProducts from "@/container/ProductsView/OtherProducts";
 
-export default function Products() {
+export default function products() {
   return (
     <>
       <Header />

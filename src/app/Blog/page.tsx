@@ -4,7 +4,7 @@ import CardBlog from '@/container/Blog/CardBlog'
 import PosterBlog from '@/container/Blog/PosterBlog'
 import React from 'react'
 
-export default function Blog() {
+export default function blog() {
   return (
 <>
 

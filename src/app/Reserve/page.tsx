@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 import ReserveContent from "../../container/Reserve/ReserveContent";
 
 
-function Reserve() {
+function reserve() {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ function Reserve() {
   );
 }
 
-export default Reserve;
+export default reserve;

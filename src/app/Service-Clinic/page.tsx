@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import QuestionCard from "../../container/Service-Clinic/QuestionCard";
 
-function ServiceClinic() {
+function serviceclinic() {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ function ServiceClinic() {
   );
 }
 
-export default ServiceClinic;
+export default serviceclinic;

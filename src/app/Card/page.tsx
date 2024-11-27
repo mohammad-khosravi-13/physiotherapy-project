@@ -1,8 +1,9 @@
 import Header from '@/components/Header/Header'
+import EresalOrder from '@/container/Card/EresalOrder'
 import OrderCard from '@/container/Card/OrderCard'
 import React from 'react'
 
-export default function Card() {
+export default function card() {
   return (
 
     <>
@@ -12,6 +13,8 @@ export default function Card() {
    <div>
     <OrderCard/>
    </div>
+
+   <EresalOrder/>
     </>
   )
 }

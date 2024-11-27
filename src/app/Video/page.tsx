@@ -5,7 +5,7 @@ import FrameFilm from '@/container/Video/FrameFilm'
 import TitrVideo from '@/container/Video/TitrVideo'
 import React from 'react'
 
-export default function Video() {
+export default function video() {
 
 return (
     <>

@@ -6,7 +6,7 @@ import BlogCard from "@/container/ReadBlog/BlogCard";
 import BlogContent from "@/container/ReadBlog/BlogContent";
 import React from "react";
 
-export default function ReadBlog() {
+export default function readblog() {
   return (
     <>
       <Header />

@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 import FormContent from "../../container/Register/FormContent";
 import InformationForm from "../../container/Register/InformationForm";
 
-export default function Register() {
+export default function register() {
   return (
     <>
       <Header />

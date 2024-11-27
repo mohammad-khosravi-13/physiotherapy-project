@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Select from "../../container/Reserve-HomeVisit/Select";
 
-function ReserveHomeVisit() {
+function reservehomevisit() {
   return (
     <>
       <Header />
@@ -38,4 +38,4 @@ function ReserveHomeVisit() {
   );
 }
 
-export default ReserveHomeVisit;
+export default reservehomevisit;

@@ -11,10 +11,9 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^43.3.1",
     "@ckeditor/ckeditor5-react": "^9.3.1",
+    "@hassanmojab/react-modern-calendar-datepicker": "^3.1.7",
     "@progress/kendo-react-all": "^9.0.0",
     "@progress/kendo-theme-default": "^10.0.1",
-    "@hassanmojab/react-modern-calendar-datepicker": "^3.1.7",
-
     "@react-google-maps/api": "^2.20.3",
     "@tanstack/react-query": "^5.60.5",
     "@tinymce/tinymce-react": "^5.1.1",
@@ -22,16 +21,15 @@
     "axios": "^1.7.7",
     "chart.js": "^4.4.6",
     "css-loader": "^7.1.2",
+    "daisyui": "^4.12.14",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.7.0",
     "maplibre-gl": "^4.7.1",
     "next": "^14.2.16",
     "postcss-loader": "^8.1.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-day-picker": "^9.3.0",
-  
-
+    "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "react-map-gl": "^7.1.7",
     "react-multi-date-picker": "^4.5.2",
@@ -42,11 +40,11 @@
     "tinymce": "^7.5.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

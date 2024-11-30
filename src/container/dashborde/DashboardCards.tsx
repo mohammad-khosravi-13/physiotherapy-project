@@ -9,15 +9,17 @@ function DashboardCards() {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-7 text-center text-black m-auto ">
-      {iteme.map((item, index) => (
-        <div
-          key={index}
-          className={`${item.color} w-[160px] h-[140px] md:w-[232px] md:h-[200px] rounded-md flex items-center justify-center`}
-        >
-          {item.text}
-        </div>
-      ))}
+    <div className="flex justify-center items-center ">
+      <div className="grid grid-cols-2 md:grid-cols-4 sm:w-full gap-7 text-center text-black">
+        {iteme.map((item, index) => (
+          <div
+            key={index}
+            className={`${item.color} w-[140px] h-[130px] md:w-[232px] md:h-[200px] rounded-md flex items-center justify-center`}
+          >
+            {item.text}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

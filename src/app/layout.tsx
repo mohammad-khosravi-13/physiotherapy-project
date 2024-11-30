@@ -25,15 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="" lang="fa" dir="rtl">
-      {" "}
+    <html className="bg-white" lang="fa" dir="rtl">
+      {" "} 
       {/* تغییرات زبان و جهت */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  px-10 `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  `}
       >
         <ReactQueryProvider>
-          {" "}
-          {/* اضافه کردن ReactQueryProvider برای استفاده از React Query */}
           {children}
         </ReactQueryProvider>
       </body>

@@ -14,14 +14,12 @@ function Loginstayl() {
   const [modalOpen, setModalOpen] = useState(false);
   const [codeModal, setCodeModal] = useState(false);
   const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  const closeModal = () => setModalOpen(false); 
   const closeModalCode = () => setCodeModal(false);
-
   const openCodeModal = () => {
     setModalOpen(false);
     setCodeModal(true);
   };
-
   const mutation = useMutation(login, {
     onSuccess: (data) => {
       localStorage.setItem("authToken", data.token);
@@ -31,7 +29,7 @@ function Loginstayl() {
         icon: "success",
         confirmButtonText: "باشه",
       }).then(() => {
-        router.push("/panel");
+        router.push("/panel");  
       });
     },
     onError: () => {
@@ -44,15 +42,19 @@ function Loginstayl() {
     },
   });
   const clickLogin = () => {
-    if (username && password) {
+    if (!username || !password) {
+       Swal.fire({
+         title: "خطا!",
+         text: "لطفاً همه فیلدها را پر کنید.",
+         icon: "warning",
+         confirmButtonText: "باشه",
+       });
+       return;
+    }
+    if (username==="admin" && password==="a12345678") {
       mutation.mutate({ username, password });
     } else {
-      Swal.fire({
-        title: "خطا!",
-        text: "همه فیلد هارو پر کنید",
-        icon: "warning",
-        confirmButtonText: "باشه",
-      });
+     window.location.href = "http://localhost:3000";
     }
   };
 

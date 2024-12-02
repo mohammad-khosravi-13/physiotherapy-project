@@ -44,7 +44,6 @@ function Navbarprofile() {
                   )
                 )}
               </div>
-
               <div className="w-full lg:w-[48%] flex flex-col gap-6">
                 {["نام خانوادگی", "ایمیل", "کدملی", "آدرس"].map((label) => (
                   <div className="relative" key={label}>

@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import ReserveContent from "../../container/Reserve/ReserveContent";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
 
 function reserve() {
   return (
     <>
-      <Header />
+      <MainHeader/>
      <ReserveContent/>
       <Footer />
     </>

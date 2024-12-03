@@ -9,7 +9,7 @@ export default function paneldashboard() {
     <>
       <HeaderPanel />
 
-      <div className="flex flex-col w-full gap-7">
+      <div className="flex flex-col w-full gap-7 mt-20">
   <div className="flex w-full justify-start gap-7 ">
     <Crod />
     <Feild />

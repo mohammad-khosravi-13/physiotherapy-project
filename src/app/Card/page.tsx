@@ -1,6 +1,7 @@
-import Header from '@/components/Header/Header'
+
 import EresalOrder from '@/container/Card/EresalOrder'
 import OrderCard from '@/container/Card/OrderCard'
+import MainHeader from '@/container/MainHeader/MainHeader'
 import React from 'react'
 
 export default function card() {
@@ -8,7 +9,7 @@ export default function card() {
 
     <>
     
-   <Header/>
+   <MainHeader/>
 
    <div>
     <OrderCard/>

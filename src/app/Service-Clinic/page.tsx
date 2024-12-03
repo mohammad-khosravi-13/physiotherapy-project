@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import khadamtclicic from "@/svg/khadamatcilicnc.svg";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import QuestionCard from "../../container/Service-Clinic/QuestionCard";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
 function serviceclinic() {
   return (
     <>
-      <Header />
-      <div className="flex justify-center relative">
+      <MainHeader/>
+      <div className="flex justify-center relative mt-20">
         <Image src={khadamtclicic} alt="" className="  w-[1248px] h-[80px] " />
       </div>
       <div className="absolute -mt-12 right-[700px] text-[18px] text-white font-bold">

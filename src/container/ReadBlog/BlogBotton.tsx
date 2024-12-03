@@ -6,12 +6,11 @@ import vectorcalender from "@/svg/Vectorcalender.svg";
 
 export default function BlogBotton() {
   return (
-    <>
-      <div>
-        <div className="flex justify-end pl-[96px] mt-[8px]">
+      <>
+        <div className="flex justify-end pl-[96px] mt-24">
           <Link
             className="btn w-[193px] h-[48px] rounded-[8px] text-[#0974A2] text-[20px] border-[1px] border-[#0974A2]"
-            href={"/Blog"}
+            href={"/blog"}
           >
             برگشت به بلاگ
           </Link>
@@ -34,7 +33,6 @@ export default function BlogBotton() {
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </>
   );
 }

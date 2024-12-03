@@ -16,7 +16,7 @@ export default function OrderCard() {
 
   return (
     
-    <>
+    <div className="mt-20">
       {data.map((order, index) => (
         <div
           key={order.id}
@@ -56,6 +56,6 @@ export default function OrderCard() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }

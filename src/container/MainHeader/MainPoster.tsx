@@ -11,7 +11,7 @@ export default function MainPoster() {
 
     <>
     
-    <Image src={Rectangle} alt="" width={1440} height={559} className="" />
+    <Image src={Rectangle} alt="" width={1440} height={559} className="pl-3" />
 
 <div className="flex justify-start mr-28 -mt-[172px] ">
   <div className="absolute  -mt-[170px] rtl: flex justify-center flex-col  ">

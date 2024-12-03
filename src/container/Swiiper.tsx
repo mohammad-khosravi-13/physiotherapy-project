@@ -17,7 +17,7 @@ const Swiiper = () => {
   return (
     <Swiper
       navigation
-      pagination={{ clickable: true }}
+     
       loop
       modules={[Pagination, Navigation, Autoplay]}
       className=" w-[1300px] h-[300px] relative   "

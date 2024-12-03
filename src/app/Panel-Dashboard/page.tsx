@@ -8,7 +8,7 @@ export default function paneldashboard() {
     <>
       <HeaderPanel/>
 
-      <div className="flex w-full justify-between ">
+      <div className="flex w-full justify-between mt-20 ">
         <Crod />
         <Form />
       </div>

@@ -4,13 +4,13 @@ import Image from "next/image";
 import editvector from "@/svg/Editvector.svg";
 import reservrpic from "@/svg/reservepic.svg";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import Select from "../../container/Reserve-HomeVisit/Select";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
 function reservehomevisit() {
   return (
     <>
-      <Header />
+      <MainHeader/>
 
       <div className="flex justify-start items-center gap-2 mr-20 mt-[130px]">
         <Image

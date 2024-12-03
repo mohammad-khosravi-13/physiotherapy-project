@@ -95,13 +95,13 @@ export default function MainProducts() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <Image src={productframe} alt="" className="   w-[1248px] h-[80px] " />
+      <div className="flex justify-center ">
+        <Image src={productframe} alt="" className="   w-[1248px] h-[80px] mt-20 " />
       </div>
 
       <Swiper
         navigation
-        pagination={{ clickable: true }}
+       
         loop={false}
         modules={[Pagination, Navigation]}
         slidesPerView={1}

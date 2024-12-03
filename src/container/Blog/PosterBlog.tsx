@@ -6,14 +6,14 @@ export default function PosterBlog() {
   return (
 
     <>
-    <div className='flex justify-center relative '>
+    
 
     <Image
-              className="w-[1248px] h-[256px]  rounded-md"
+              className="w-[1248px] h-[256px]  rounded-md mt-20 mr-24 "
               src={postreblog}
               alt=""
             />
-    </div>
+  
 
     <div className='absolute -mt-[180px] left-[552px]  '>
       <h3 className='text-[28px]'>نوبت فیـــــزیوتـراپـــــــی </h3>

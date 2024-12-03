@@ -7,7 +7,7 @@ export default function TitrVideo() {
 
     <>
     
-    <div className="flex justify-center relative">
+    <div className="flex justify-center relative mt-20">
         <Image src={framefilmm} alt="" className="  w-[1248px] h-[80px] " />
       </div>
     

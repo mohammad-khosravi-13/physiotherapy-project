@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import ReactQueryProvider from "@/../utils/ReactQueryProvider"; // تغییرات برنچ شما
+import ReactQueryProvider from "@/../utils/ReactQueryProvider"; 
 import "./globals.css";
 
 const geistSans = localFont({
@@ -27,13 +27,13 @@ export default function RootLayout({
   return (
     <html className="" lang="fa" dir="rtl">
       {" "}
-      {/* تغییرات زبان و جهت */}
+    
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased  px-10 `}
       >
         <ReactQueryProvider>
           {" "}
-          {/* اضافه کردن ReactQueryProvider برای استفاده از React Query */}
+        
           {children}
         </ReactQueryProvider>
       </body>

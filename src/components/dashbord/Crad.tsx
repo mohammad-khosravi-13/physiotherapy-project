@@ -37,7 +37,7 @@ function Crad() {
   ];
 
   return (
-    <div className="relative">
+    <div>
       <div className="sm:hidden flex items-center justify-between p-4 border-b-2">
         <h1 className="text-lg font-bold">پنل مدیریت</h1>
         <button
@@ -47,17 +47,13 @@ function Crad() {
           ☰
         </button>
       </div>
-      <div
-        className=" w-[186px] h-[992px] border-2 rounded-md shadow-md "  
-      >
+      <div className=" w-[186px] h-[992px] border-2 rounded-md shadow-md ">
         <div className="flex justify-between items-center px-5">
           <h2 className="text-lg font-bold">منو</h2>
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-2xl focus:outline-none sm:block lg:hidden"
-          >
-            
-          </button>
+          ></button>
         </div>
         <div className="flex flex-col items-center gap-2 text-black relative top-[20px]">
           <Image
@@ -69,7 +65,7 @@ function Crad() {
           />
           <h1 className="text-center">محمد خسروی</h1>
         </div>
-        <div className="text-black text-base flex flex-col gap-7 p-2 relative top-16 h-[calc(100%-200px)]">
+        <div className="text-black text-base  flex flex-col gap-7 p-2 relative top-16 h-[calc(100%-200px)]">
           {cerad.map((item, index) => (
             <div key={index} className="flex gap-2 items-center">
               <Image src={item.src} alt="icon" width={24} height={24} />

@@ -25,9 +25,11 @@ body {
 }
 
 input{
-  @apply bg-white 
+  @apply bg-white  p-3
 }
-
+select {
+  @apply bg-white
+}
 
 @layer utilities {
   .text-balance {

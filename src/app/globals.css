@@ -57,7 +57,7 @@ select {
   background-color: #ffffff; 
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  padding: 10px 6px 10px 10px !important;
 }
 
 /* استایل ردیف هفته‌ها */
@@ -68,13 +68,13 @@ select {
   background-color:#0974A2; 
   width: 979px;
   height:50px;
-  padding: 12px 0;
+  padding: 25px 35px 25px 35px !important;
   border-radius: 15px;
   margin-bottom: 20px;
  
 }
 .rmdp-week-day.saturday {
-  background-color: red !important; 
+  background-color: rgb(255, 255, 255) !important; 
   color: white !important; 
   font-weight: bold !important; 
   border-radius: 8px;
@@ -89,9 +89,9 @@ select {
 .rmdp-week:not(:first-child) {
   background-color: #ffffff; 
   color: black; 
-  padding: 12px 0;
+  padding: 0px 30px 15px 30px !important;
   border-radius: 15px;
-  width: 950px;
+  width: 970px;
   height:90px;
 } 
 
@@ -133,11 +133,11 @@ select {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .rmdp-day:hover {
-  background-color: #333;
+  background-color: noll;
   color: white;
 }
 
@@ -149,7 +149,7 @@ select {
 
 /* روزهای غیر فعال */
 .rmdp-day.disabled {
-  background-color: #e0e0e0;
+  background-color: #ff0000;
   color: #bdbdbd;
   cursor: not-allowed;
   box-shadow: none;
@@ -157,19 +157,21 @@ select {
 
 /* استایل روزها با سایه */
 .sd {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  width: 50px;
+  height: 50px  ;
+  color: black !important;
   text-align: center;
-  font-size: 24px;
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 28px !important;
+  border-radius: 0px !important;
+  padding: 10px !important;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
   cursor: pointer;
 }
 
 .sd:hover {
-  background-color: #f1f1f1;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color:noll;
+  box-shadow: 0 0px 0 px rgba(0, 0, 0, 0);
 }
 
 /* استایل هدر تقویم */
@@ -177,7 +179,7 @@ select {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #0d00ff;
+  color: #ffffff;
   
 }
 
@@ -188,7 +190,7 @@ select {
 } 
 
 .rmdp-header-values:hover {
-  color: #444; 
+  color: #444444; 
 }
 
 /* تنظیمات اضافی */

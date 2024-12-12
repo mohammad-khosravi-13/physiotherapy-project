@@ -47,7 +47,7 @@ function Crad() {
           ☰
         </button>
       </div>
-      <div className=" w-[186px] h-[992px] border-2 rounded-md shadow-md ">
+      <div className=" w-[206px] h-[992px] border-2 rounded-md shadow-md ">
         <div className="flex justify-between items-center px-5">
           <h2 className="text-lg font-bold">منو</h2>
           <button

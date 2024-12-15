@@ -3,16 +3,18 @@ import React, { useState } from "react";
 import { Calendar } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import DateObject from "react-date-object";
-const getDayStyle = (date: DateObject) => {
+
+const getDayStyle = (date: any) => {
   const day = date.toDate().getDay();
   if (day === 6) {
     return { backgroundColor: "red", color: "white", fontWeight: "bold" };
   }
   return {};
 };
-const Calendar: React.FC = () => {
-  const [value, setValue] = useState<DateObject>(new DateObject());
+
+const CustomCalendar: React.FC = () => {
+  const [value, setValue] = useState<any[]>([]);
+
   const customLocale = {
     ...persian_fa,
     days: [
@@ -23,7 +25,7 @@ const Calendar: React.FC = () => {
       "چهارشنبه",
       "پنجشنبه",
       "جمعه",
-    ], // روزها
+    ],
     months: [
       "فروردین",
       "اردیبهشت",
@@ -32,28 +34,28 @@ const Calendar: React.FC = () => {
       "مرداد",
       "شهریور",
       "مهر",
+      "آبان",
       "آذر",
       "دی",
       "بهمن",
       "اسفند",
-    ], // ماه‌ها
+    ],
   };
 
   return (
     <div>
-      <div>
-        <Calendar
-          value={value}
-          onChange={setValue}
-          shadow={false}
-          calendar={persian}
-          locale={customLocale}
-          calendarPosition="bottom-right"
-          multiple={true}
-          dayStyle={getDayStyle}
-        />
-      </div>
+      <Calendar
+        value={value}
+        onChange={(dates) => setValue(dates as any[])}
+        shadow={false}
+        calendar={persian}
+        locale={customLocale}
+        calendarPosition="bottom-right"
+        multiple={true}
+        dayStyle={getDayStyle}
+      />
     </div>
   );
 };
-export default Calendar;
+
+export default CustomCalendar;

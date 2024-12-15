@@ -12,7 +12,7 @@ import PicofReserve from "@/container/MainHeader/PicofReserve";
 
 function page() {
   return (
-    <>
+    <div className=" px-10">
       <MainHeader />
 
       <MainPoster />
@@ -31,7 +31,7 @@ function page() {
       <Footer />
 
       </div>
-    </>
+    </div>
   );
 }
 

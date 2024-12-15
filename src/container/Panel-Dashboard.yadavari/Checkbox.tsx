@@ -13,16 +13,16 @@ export default function Checkbox() {
         <div className="flex flex-col mt-10 gap-5">
           <div className="flex justify-between">
             <h1 className="text-[16px]">پیامک</h1>
-            <div class="toggle-switch">
+            <div className="toggle-switch">
               <input type="checkbox" id="switch1" />
-              <label for="switch1"> </label>
+              <label htmlFor="switch1"> </label>
             </div>
           </div>
           <div className="flex justify-between">
             <h1 className="text-[16px]">ایمیل</h1>
-            <div class="toggle-switch">
+            <div className="toggle-switch">
               <input type="checkbox" id="switch2" />
-              <label for="switch2"></label>
+              <label htmlFor="switch2"></label>
             </div>
           </div>
         </div>

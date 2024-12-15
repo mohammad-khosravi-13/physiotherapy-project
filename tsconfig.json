@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/container/404Page/ImageError.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/container/404Page/ImageError.tsx", "src/container/work time/Calendarwork.jsx", "src/container/CalenderReserve/Calenderrivers.jsx", "src/container/datepikcer/Calender.jsx"],
   "exclude": ["node_modules"]
 }

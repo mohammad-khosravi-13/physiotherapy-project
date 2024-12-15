@@ -24,5 +24,4 @@ export default function PanelDashboard() {
         </div>
       </div>
     </>
-  )
-}
+  )}

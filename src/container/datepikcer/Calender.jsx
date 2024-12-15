@@ -4,16 +4,15 @@ import React, { useState } from "react";
 import { Calendar } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import DateObject from "react-date-object";
 import Image from "next/image";
 import close from "@/svg/Close.svg";
 
-const toPersianNumbers = (str: string) => {
+const toPersianNumbers = (str) => {
   const persianNumbers = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
   return str.replace(/\d/g, (d) => persianNumbers[parseInt(d)]);
 };
 
-const getDayStyle = (date: DateObject) => {
+const getDayStyle = (date) => {
   const day = date.toDate().getDay();
   if (day === 6) {
     return {
@@ -23,12 +22,12 @@ const getDayStyle = (date: DateObject) => {
   return {};
 };
 
-const Calendarwork: React.FC = () => {
-  const [value, setValue] = useState<DateObject>(new DateObject());
-  const [selectDate, setSelectDate] = useState<DateObject | null>(null);
+const Calendarwork = () => {
+  const [value, setValue] = useState(new Date());
+  const [selectDate, setSelectDate] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [dayTexts, setDayTexts] = useState<{ [key: string]: string }>({});
-  const [inputText, setInputText] = useState<string>("");
+  const [dayTexts, setDayTexts] = useState({});
+  const [inputText, setInputText] = useState("");
 
   const customLocale = {
     ...persian_fa,
@@ -57,14 +56,14 @@ const Calendarwork: React.FC = () => {
     ],
   };
 
-  const clickDate = (date: DateObject) => {
+  const clickDate = (date) => {
     setSelectDate(date);
     setInputText(dayTexts[date.format("YYYY-MM-DD")] || "");
     setModalOpen(true);
   };
 
   const closeModal = () => setModalOpen(false);
-  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = (e) => {
     setInputText(e.target.value);
   };
   const handleSaveText = () => {
@@ -78,30 +77,22 @@ const Calendarwork: React.FC = () => {
     }
   };
 
-  // حذف رویداد
-  const handleDeleteText = (date: DateObject) => {
+  const handleDeleteText = (date) => {
     const formattedDate = date.format("YYYY-MM-DD");
     const newDayTexts = { ...dayTexts };
     delete newDayTexts[formattedDate];
-    setDayTexts(newDayTexts); 
+    setDayTexts(newDayTexts);
   };
 
-  const addTextToDays = (day: DateObject) => {
+  const addTextToDays = (day) => {
     const formattedDate = day.format("YYYY-MM-DD");
     return (
       <div className="text-center w-20 ml-10 ">
         <span>{toPersianNumbers(day.day.toString())}</span>
         {dayTexts[formattedDate] && (
           <div className=" w-20 flex justify-end gap-9">
-            <button
-              onClick={() => handleDeleteText(day)}
-              className="  mt-16"
-            >
-              <Image
-              src={close}
-              alt=" close icon"
-              width={24}
-              height={24}/>
+            <button onClick={() => handleDeleteText(day)} className="mt-16">
+              <Image src={close} alt=" close icon" width={24} height={24} />
             </button>
             <p className="text-[16px] text-black mt-16">
               {toPersianNumbers(dayTexts[formattedDate])}
@@ -114,7 +105,7 @@ const Calendarwork: React.FC = () => {
 
   return (
     <>
-      <div className="">
+      <div>
         <Calendar
           value={value}
           onChange={(date) => {

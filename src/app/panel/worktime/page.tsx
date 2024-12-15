@@ -1,4 +1,4 @@
-import Calendarwork from "@/container/datepikcer/Taghvim";
+import Calendarwork from "@/container/datepikcer/Calender";
 import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
 import React from "react";

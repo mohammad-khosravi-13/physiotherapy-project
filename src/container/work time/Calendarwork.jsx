@@ -4,7 +4,7 @@ import { Calendar } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 
-const getDayStyle = (date: any) => {
+const getDayStyle = (date) => {
   const day = date.toDate().getDay();
   if (day === 6) {
     return { backgroundColor: "red", color: "white", fontWeight: "bold" };
@@ -12,8 +12,8 @@ const getDayStyle = (date: any) => {
   return {};
 };
 
-const CustomCalendar: React.FC = () => {
-  const [value, setValue] = useState<any[]>([]);
+const CustomCalendar = () => {
+  const [value, setValue] = useState([]);
 
   const customLocale = {
     ...persian_fa,
@@ -46,7 +46,7 @@ const CustomCalendar: React.FC = () => {
     <div>
       <Calendar
         value={value}
-        onChange={(dates) => setValue(dates as any[])}
+        onChange={(dates) => setValue(dates)}
         shadow={false}
         calendar={persian}
         locale={customLocale}

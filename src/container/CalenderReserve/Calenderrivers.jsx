@@ -3,11 +3,19 @@ import React, { useState } from "react";
 import { Calendar } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import DateObject from "react-date-object";
 import "./Calender.css";
 
+const getDayStyle = (date) => {
+  const day = date.toDate().getDay();
+  if (day === 6) {
+    return { backgroundColor: "red", color: "white", fontWeight: "bold" };
+  }
+  return {};
+};
+
 function Calenderrivers() {
-  const [value, setValue] = useState<DateObject>(new DateObject());
+  const [value, setValue] = useState(new Date());
+
   const customLocale = {
     ...persian_fa,
     days: [
@@ -18,7 +26,7 @@ function Calenderrivers() {
       "چهارشنبه",
       "پنجشنبه",
       "جمعه",
-    ], // روزها
+    ],
     months: [
       "فروردین",
       "اردیبهشت",
@@ -31,8 +39,9 @@ function Calenderrivers() {
       "دی",
       "بهمن",
       "اسفند",
-    ], // ماه‌ها
+    ],
   };
+
   return (
     <div>
       <div>
@@ -50,13 +59,5 @@ function Calenderrivers() {
     </div>
   );
 }
-
-const getDayStyle = (date: DateObject) => {
-  const day = date.toDate().getDay();
-  if (day === 6) {
-    return { backgroundColor: "red", color: "white", fontWeight: "bold" };
-  }
-  return {};
-};
 
 export default Calenderrivers;

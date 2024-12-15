@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'daisyui/dist/full.css';
+:root {
+  --background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+@font-face {
+  font-family: 'kalame';
+  src: url('../app/fonts//_Woff/KalamehWeb-Regular.woff') format('woff'),
+       url('../app/fonts/_Woff2/KalamehWeb\(NoEn\)-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  color:black;
+  background: var(--background);
+  font-family: 'kalame', Arial, Helvetica, sans-serif;
+}
+
+input{
+  @apply bg-white  p-3
+}
+select {
+  @apply bg-white
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* تنظیم اندازه کلی تقویم */
+.custom-calendar {
+  width: 800px !important;
+  height: 600px !important;
+  border-radius: 20px;
+  background-color: #ffffff; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* استایل برای تقویم */
+.rmdp-calendar {
+  width: 1000px;
+  height: 100px;
+  background-color: #ffffff; 
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 6px 10px 10px !important;
+}
+
+/* استایل ردیف هفته‌ها */
+.rmdp-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#0974A2; 
+  width: 979px;
+  height:50px;
+  padding: 25px 35px 25px 35px !important;
+  border-radius: 15px;
+  margin-bottom: 20px;
+ 
+}
+.rmdp-week-day.saturday {
+  background-color: rgb(255, 255, 255) !important; 
+  color: white !important; 
+  font-weight: bold !important; 
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.rmdp-week-day.saturday:hover {
+  background-color: #ffcccc; 
+}
+
+.rmdp-week:not(:first-child) {
+  background-color: #ffffff; 
+  color: black; 
+  padding: 0px 30px 15px 30px !important;
+  border-radius: 15px;
+  width: 970px;
+  height:90px;
+} 
+
+/* استایل برای روزهای داخل ردیف هفته */
+.rmdp-week-day {
+  color: white !important; 
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  width: 55px;
+  cursor: pointer;
+}
+
+.rmdp-week-day:hover {
+  background-color: #ffffff; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل برای روزهای تقویم */
+.rmdp-day-picker {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.rmdp-day {
+  width: 90px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+.rmdp-day:hover {
+  background-color: noll;
+  color: white;
+}
+
+/* تاریخ‌های انتخاب‌شده */
+.rmdp-day.selected {
+  background-color: #ff0000; 
+  color: white;
+}
+
+/* روزهای غیر فعال */
+.rmdp-day.disabled {
+  background-color: #ff0000;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* استایل روزها با سایه */
+.sd {
+  background-color: white !important;
+  width: 50px;
+  height: 50px  ;
+  color: black !important;
+  text-align: center;
+  font-size: 28px !important;
+  border-radius: 0px !important;
+  padding: 10px !important;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.sd:hover {
+  background-color:noll;
+  box-shadow: 0 0px 0 px rgba(0, 0, 0, 0);
+}
+
+/* استایل هدر تقویم */
+ .rmdp-header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  
+}
+
+.rmdp-header-values {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333; 
+} 
+
+.rmdp-header-values:hover {
+  color: #444444; 
+}
+
+/* تنظیمات اضافی */
+.rmdp-wrapper {
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+}

@@ -5,7 +5,7 @@ function Tabelcontiner() {
     <div>
       <table className="min-w-full border-collapse mt-[4%]  ">
         <thead>
-          <tr className="bg-[#4A4A4A] rounded-t-xl">
+          <tr className="bg-[#4A4A4A] text-white rounded-t-xl">
             <th className=" rounded-tr-lg px-4 py-2">ردیف</th>
             <th className=" px-4 py-2">شناسه کاربری</th>
             <th className=" px-4 py-2">نام و نام خانوادگی</th>
@@ -144,7 +144,7 @@ function Tabelcontiner() {
       <div className=" flex justify-between mt-5">
         <div></div>
         <div>
-          <button className="w-[136px] h-[36px] bg-[#0974A2] rounded-[8px]">
+          <button className="w-[136px] text-white  h-[36px] bg-[#0974A2] rounded-[8px]">
             خروجی اکسل
           </button>
         </div>

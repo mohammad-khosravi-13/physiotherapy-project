@@ -18,8 +18,7 @@ function page() {
       <MainPoster />
 
       <div className="flex flex-col mt-72  ">
-        <DayofWork />
-
+        <DayofWork />×
         <MovieContent />
         <Swiiper />
         <PicofReserve />
@@ -28,7 +27,10 @@ function page() {
       <Bime />
       <Soalat />
       <Didgah />
+      <div className="mt-10">
       <Footer />
+
+      </div>
     </>
   );
 }

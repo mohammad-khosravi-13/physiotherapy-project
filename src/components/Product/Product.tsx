@@ -85,7 +85,7 @@ function Product() {
 
       <Swiper
         navigation
-        pagination={{ clickable: true }}
+        
         loop
         modules={[Pagination, Navigation, Autoplay]}
         slidesPerView={5}

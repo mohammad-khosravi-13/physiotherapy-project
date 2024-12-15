@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import FormContent from "../../container/Register/FormContent";
 import InformationForm from "../../container/Register/InformationForm";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
-export default function Register() {
+export default function register() {
   return (
     <>
-      <Header />
-      <div className="flex  w-full ">
+      <MainHeader/>
+      <div className="flex  w-full mt-14 ">
         <FormContent />
         <div className="h-[593px] border-l-2 border-[#0974A2] ml-24 mt-32">
         </div>

@@ -1,17 +1,21 @@
-import Header from '@/components/Header/Header'
+
+import EresalOrder from '@/container/Card/EresalOrder'
 import OrderCard from '@/container/Card/OrderCard'
+import MainHeader from '@/container/MainHeader/MainHeader'
 import React from 'react'
 
-export default function Card() {
+export default function card() {
   return (
 
     <>
     
-   <Header/>
+   <MainHeader/>
 
    <div>
     <OrderCard/>
    </div>
+
+   <EresalOrder/>
     </>
   )
 }

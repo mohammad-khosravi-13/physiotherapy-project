@@ -1,13 +1,17 @@
+"use client";
+import { useState } from "react";
 import Crad from "@/components/dashbord/Crad";
 import Navbar from "@/components/dashbord/Navbar";
 import Image from "next/image";
+import close from "@/svg/Close.svg";
 import Filtercontiner from "@/container/todaypanel/Filtercontiner";
 import search from "@/svg/Search 2.svg";
-import React from "react";
 import Tabelcontiner from "@/container/todaypanel/Tabelcontiner";
 import Filterkarbar from "@/container/todaypanel/Filterkarbar";
-
 function Page() {
+  const [openModal, setOpenModal] = useState(false);
+  const clickResirve = () => setOpenModal(true);
+  const closeClick =()=>setOpenModal(false)
   return (
     <>
       <Navbar />
@@ -28,7 +32,10 @@ function Page() {
               </div>
             </div>
             <div className=" relative left-8 bottom-5 ">
-              <button className="bg-[#269200] w-[124px] h-[48px] rounded-[8px]">
+              <button
+                onClick={clickResirve}
+                className="bg-[#269200] w-[124px] text-white h-[48px] rounded-[8px]"
+              >
                 افزودن رزرو
               </button>
             </div>
@@ -43,6 +50,33 @@ function Page() {
             <Tabelcontiner />
           </div>
         </div>
+        {openModal && (
+          <div className="modal modal-open p-3">
+            <div className=" flex flex-col w-[734px] h-[410px] text-[16px] p-3 rounded-[8px] bg-white">
+              <div>
+                <Image
+                  src={close}
+                  alt="close icon"
+                  width={24}
+                  height={24}
+                  onClick={closeClick}
+                  className="
+                 float-end"
+                />
+              </div>
+              <h1 className=" text-center  font-bold mt-6">اطلاعات کاربر</h1>
+              <div className="flex flex-col gap-3 w-[87%] m-auto">
+                <p>نام و نام خانوادگی</p>
+                <p>جنسیت:</p>
+                <p>تاریخ تولد:</p>
+                <p>کدملی:</p>
+                <p>ایمیل:</p>
+                <p>آدرس:</p>
+                <p>سابقه ی بیماری:</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

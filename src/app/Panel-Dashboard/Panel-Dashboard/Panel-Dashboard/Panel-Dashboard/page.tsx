@@ -4,11 +4,11 @@ import Crod from "@/container/Panel-Dashboard/Crod";
 import HeaderPanel from "@/container/Panel-Dashboard/HeaderPanel";
 import React from "react";
 
-export default function PanelDashboard() {
+export default function paneldashboard() {
   return (
     <>
       <HeaderPanel />
-      <div className=" w-full gap-7 relative">
+      <div className=" w-full gap-7 relative mt-20">
         <div className="flex w-full  gap-7 ">
           <Crod />
           <Feild />

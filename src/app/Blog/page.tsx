@@ -1,14 +1,13 @@
 import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
 import CardBlog from '@/container/Blog/CardBlog'
 import PosterBlog from '@/container/Blog/PosterBlog'
+import MainHeader from '@/container/MainHeader/MainHeader'
 import React from 'react'
 
-export default function Blog() {
+export default function blog() {
   return (
 <>
-
-<Header/>
+<MainHeader/>
 <PosterBlog/>
 <CardBlog/>
 <Footer/>

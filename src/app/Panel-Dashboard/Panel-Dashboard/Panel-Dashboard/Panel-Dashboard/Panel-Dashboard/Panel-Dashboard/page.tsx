@@ -10,7 +10,7 @@ export default function PanelDashboard() {
     <>
     
     <HeaderPanel/>
-      <div className=" w-full  gap-7">
+      <div className=" w-full  gap-7 mt-20">
         <div className="flex   w-full  gap-7 ">
           <Crod/>
     <Checkbox/>

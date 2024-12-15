@@ -1,15 +1,15 @@
 "use client"
 import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
+import MainHeader from '@/container/MainHeader/MainHeader'
 import FrameFilm from '@/container/Video/FrameFilm'
 import TitrVideo from '@/container/Video/TitrVideo'
 import React from 'react'
 
-export default function Video() {
+export default function video() {
 
 return (
     <>
-      <Header />
+      <MainHeader/>
       <TitrVideo/>
       <FrameFilm/>
       <Footer/>

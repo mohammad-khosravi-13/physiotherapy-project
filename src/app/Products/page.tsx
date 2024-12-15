@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import MainProducts from "../../container/MainProducts/MainProducts";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
-function Products() {
+function products() {
   return (
     <>
-      <Header />
+      <MainHeader/>
      <MainProducts/>
 
       <Footer />
@@ -15,4 +15,4 @@ function Products() {
   
 }
 
-export default Products;
+export default products;

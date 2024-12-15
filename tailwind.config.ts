@@ -15,11 +15,7 @@ const config: Config = {
       },
       boxShadow: {
         custom: "0 10px 20px rgba(.1, .1, .1, .1)",
-      },
-      screens: {
-        xs: "480px",
-        lg: "1536px",
-      },
+      },    
     },
   },
   plugins: [],

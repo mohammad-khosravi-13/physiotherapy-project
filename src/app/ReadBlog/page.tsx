@@ -1,15 +1,15 @@
 import Didgah from "@/components/Didgah/Didgah";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import BlogBotton from "@/container/ReadBlog/BlogBotton";
 import BlogCard from "@/container/ReadBlog/BlogCard";
 import BlogContent from "@/container/ReadBlog/BlogContent";
-import React from "react";
+import MainHeader from "@/container/MainHeader/MainHeader";
 
-export default function ReadBlog() {
+export default function readblog() {
   return (
-    <>
-      <Header />
+    <div >
+            <MainHeader />
+
       <BlogBotton />
 
       <div className="flex  w-full ">
@@ -20,6 +20,6 @@ export default function ReadBlog() {
       </div>
       <Didgah/>
       <Footer/>
-    </>
+    </div>
   );
 }

@@ -16,24 +16,25 @@ import icon10 from "../../svg/Pin.svg";
 import icon11 from "../../svg/Message 35.svg";
 import icon12 from "../../svg/Time Circle 1.svg";
 import icon13 from "../../svg/Setting.svg";
+import Link from "next/link";
 
 function Crad() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const cerad = [
-    { text: "داشبورد", src: icon1 },
-    { text: "جدول برنامه ریزی", src: icon2 },
-    { text: "رزرو های امروز", src: icon3 },
-    { text: "گزارش مالی", src: icon4 },
-    { text: "دوره های مالی", src: icon5 },
-    { text: "کاربران", src: icon6 },
-    { text: "خدمات منزل", src: icon7 },
-    { text: "ادمین ها", src: icon8 },
-    { text: "دیدگاه ها", src: icon9 },
-    { text: "محصولات", src: icon10 },
-    { text: "پیام ها", src: icon11 },
-    { text: "ساعت کاری", src: icon12 },
-    { text: "تنظیمات", src: icon13 },
+    { text: "داشبورد", src: icon1, href: "/panel/" },
+    { text: "جدول برنامه ریزی", src: icon2, href: "/panel/worktime" },
+    { text: "رزرو های امروز", src: icon3, href: "/panel/todaypanel" },
+    { text: "گزارش مالی", src: icon4, href: "/panel/canseletpanel" },
+    { text: "دوره های مالی", src: icon5, href: "/panel/financeial" }, 
+    { text: "کاربران", src: icon6, href: "/panel/financeial" },
+    { text: "خدمات منزل", src: icon7, href: "/pane/financeial" },
+    { text: "ادمین ها", src: icon8, href: "/panel/financeial" },
+    { text: "دیدگاه ها", src: icon9, href: "/panel/financeial" },
+    { text: "محصولات", src: icon10, href: "/panel/financeial" },
+    { text: "پیام ها", src: icon11, href: "/panel/financeial" },
+    { text: "ساعت کاری", src: icon12, href: "/panel/financeial" },
+    { text: "تنظیمات", src: icon13, href: "/panel/financeial" },
   ];
 
   return (
@@ -47,7 +48,7 @@ function Crad() {
           ☰
         </button>
       </div>
-      <div className=" w-[186px] h-[992px] border-2 rounded-md shadow-md ">
+      <div className=" w-[206px] h-[992px] border-2 rounded-md shadow-md ">
         <div className="flex justify-between items-center px-5">
           <h2 className="text-lg font-bold">منو</h2>
           <button
@@ -67,10 +68,12 @@ function Crad() {
         </div>
         <div className="text-black text-base  flex flex-col gap-7 p-2 relative top-16 h-[calc(100%-200px)]">
           {cerad.map((item, index) => (
-            <div key={index} className="flex gap-2 items-center">
-              <Image src={item.src} alt="icon" width={24} height={24} />
-              <p>{item.text}</p>
-            </div>
+            <Link key={index} href={item.href}>
+              <div className=" flex gap-4">
+                <Image src={item.src} alt="icon" width={24} height={24} />
+                <p>{item.text}</p>
+              </div>
+            </Link>
           ))}
         </div>
         <div className="flex flex-col items-center sm:mt-auto">

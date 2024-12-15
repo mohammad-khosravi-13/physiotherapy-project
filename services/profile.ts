@@ -24,21 +24,3 @@ export const createProfile = async (profile: any) => {
   }
 };
 
-export const updateProfile = async (updatedData: any) => {
-  try {
-    const token = localStorage.getItem("authToken");
-    if (!token) {
-      throw new Error("توکن احراز هویت یافت نشد.");
-    }
-
-    const response = await axios.put(`${BASE_URL}update/`, updatedData, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    return response.data;
-  } catch (error) {
-    console.error("Error updating profile:", error);
-    throw error; 
-  }
-};

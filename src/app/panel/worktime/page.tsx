@@ -14,7 +14,6 @@ function page() {
         <div>
           <Calendarwork />
           <button className=" bg-[#269200] w-[177px] h-[36px] rounded-[8px] float-end mt-10">
-            {" "}
             ثبت تغیرات
           </button>
         </div>

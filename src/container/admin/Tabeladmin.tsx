@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import justify from "../../../svg/Document Justify  Right 3.svg";
-import showe from "../../../svg/Show.svg";
-import delet from "../../../svg/Delete 2.svg";
+import justify from "@/svg/Document Justify  Right 3.svg";
+import showe from "@/svg/Show.svg";
+import delet from "@/svg/Delete 2.svg";
 function Tabeladmin() {
   return (
     <div className=" h-[77%]">

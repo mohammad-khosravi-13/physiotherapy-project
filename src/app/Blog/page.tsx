@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import photo3 from "@/app/SVG/axsafhe3.svg";
+import photo3 from "@/svg/axnobat.svg";
 import Footer from "@/components/Footer/Footer";
 import CardBlog from "@/container/Blog/CardBlog";
 import Header from "@/components/Haeder/Haeder";

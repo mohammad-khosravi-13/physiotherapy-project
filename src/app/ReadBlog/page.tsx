@@ -7,7 +7,7 @@ import MainHeader from "@/container/MainHeader/MainHeader";
 
 export default function readblog() {
   return (
-    <div >
+    <>
             <MainHeader />
 
       <BlogBotton />
@@ -20,6 +20,6 @@ export default function readblog() {
       </div>
       <Didgah/>
       <Footer/>
-    </div>
+    </>
   );
 }

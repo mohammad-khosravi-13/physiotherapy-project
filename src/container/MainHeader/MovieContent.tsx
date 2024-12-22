@@ -20,7 +20,7 @@ export default function MovieContent() {
           />
           <h3>فیلم آموزشی</h3>
           <div className="flex justify-end gap-2 mr-[1050px]">
-            <Link className="btn text-[16px]" href={"/Video"}>
+            <Link className="btn text-[16px]" href={"/video"}>
               بیشتر
             </Link>
             <Image

@@ -1,22 +1,37 @@
 "use client";
-import { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo1 from "@/svg/Logo 1.svg";
 import Login1 from "@/svg/Login 1.svg";
 import Buy from "@/svg/Buy.svg";
-import vectorx from "@/svg/Vector x.svg";
+import { useState } from "react";
+import vextorx from "@/svg/Vector x.svg";
 
 export default function MainHeader() {
   const [modalOpen, setModalOpen] = useState(false);
   const [codeModal, setCodeModal] = useState(false);
+  const [codeModalRules, setCodeModalRules] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
+  const closeModalCode = () => setCodeModal(false);
+  const openRules = () => setCodeModalRules(true);
+  const closeModalRules = () => setCodeModalRules(false);
+  const acceptRulesAndGoBack = () => {
+    setCodeModalRules(false);
+    setModalOpen(true);
+  };
+  const editPhoneNumber = () => {
+    setCodeModal(false);
+    setCodeModalRules(false);
+    setModalOpen(true);
+  };
+
   const openCodeModal = () => {
     setModalOpen(false);
     setCodeModal(true);
+    setCodeModalRules(false);
   };
-
   return (
     <>
       <nav className="h-[60px] top-0  backdrop-blur-sm  flex justify-between items-center fixed w-full bg-gradient-to-l  to-slate-100 z-50">
@@ -50,58 +65,151 @@ export default function MainHeader() {
             </Link>
           </section>
         </div>
+        <div className="flex">
+          <div className=" flex items-center m-44 gap-3 ">
+            <button className="flex justify-center gap-2" onClick={openModal}>
+              <Image
+                src={Login1}
+                alt="login"
+                width={24}
+                height={24}
+                className=""
+              />
+              ورود
+            </button>
 
-        <div className="flex items-center m-44 gap-3">
-          <button
-            onClick={openModal}
-            className="flex h-12 items-center gap-2  "
-          >
-            <Image
-              src={Login1}
-              alt="login"
-              width={24}
-              height={24}
-              className="mt-1"
-            />
-            ورود
-          </button>
-
-          <div className="h-6 border-l border-[#0974A2] mt-1"></div>
-          <button className=" mt-1">
-            <Image src={Buy} alt="" width={24} height={24} className="" />
-          </button>
+            <div className="h-6 border-l border-[#0974A2]"></div>
+            <button>
+              <Image src={Buy} alt="" width={24} height={24} className="" />
+            </button>
+          </div>
         </div>
       </nav>
       {modalOpen && (
         <div className="modal modal-open p-3">
-          <div className="bg-[#FFFFFF] shadow-md rounded-lg p-5">
+          <div className="bg-white rounded-[8px] p-5 w-[560px] h-[267px]">
             <div className="flex justify-end">
               <button onClick={closeModal}>
                 <Image
-                  src={vectorx}
-                  alt=""
+                  src={vextorx}
+                  alt="login"
                   width={14}
                   height={14}
-                  className=""
+                  className=" "
                 />
               </button>
             </div>
-            <h2 className="text-[18px] text-center font-bold ">ورود</h2>
-            <input
-              type="text"
-              placeholder="شماره موبایل"
-              className="shadow-custom input-bordered mt-10 w-full h-12 rounded-[8px] pr-7 mb-4"
-            />
-            <div className="flex flex-col sm:flex-row gap-1 mt-4">
+            <h2 className="text-[18px] text-center font-bold mb-4">ورود</h2>
+            <div className=" flex justify-center">
+              <div className="flex flex-col ">
+                <input
+                  type="text"
+                  placeholder="شماره موبایل"
+                  className="shadow-md input-bordered mt-5 w-[488px] h-[48px] rounded-[8px] pr-7  "
+                />
+                <div className="flex gap-2">
+                  <input type="checkbox" />
+                  <p className="p-2">
+                    پذیرش{" "}
+                    <button onClick={openRules} className="text-[#0974A2]">
+                      قوانین
+                    </button>{" "}
+                    سایت
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center gap-1 mt-4">
               <button
-                className="bg-[#269200] w-[488px] h-[48px] rounded-[8px] text-white"
+                className="bg-[#269200]   rounded-[8px] text-white w-[488px] h-[48px] p-2"
                 onClick={openCodeModal}
               >
                 دریافت کد
               </button>
             </div>
           </div>
-          <div></div>
+        </div>
+      )}
+      {codeModal && (
+        <div className="modal modal-open p-3">
+          <div className="bg-white rounded-[8px] p-5 w-[560px] h-[267px]">
+            <div className="flex justify-end">
+              <button onClick={closeModalCode}>
+                <Image src={vextorx} alt="login" width={14} height={14} />
+              </button>
+            </div>
+            <h2 className="text-[18px] text-center font-bold mb-4">
+              کد یکبار مصرف
+            </h2>
+
+            <div className="flex justify-center gap-6 mt-6">
+              <input
+                type="text"
+                className="w-12 text-center border-b-2 border-gray-400 focus:outline-none focus:border-[#269200] text-[20px] font-bold "
+              />
+              <input
+                type="text"
+                className="w-12 text-center border-b-2 border-gray-400 focus:outline-none focus:border-[#269200] text-[20px] font-bold"
+              />
+              <input
+                type="text"
+                className="w-12 text-center border-b-2 border-gray-400 focus:outline-none focus:border-[#269200] text-[20px] font-bold"
+              />
+              <input
+                type="text"
+                className="w-12 text-center border-b-2 border-gray-400 focus:outline-none focus:border-[#269200] text-[20px] font-bold"
+              />
+            </div>
+
+            <div className="flex justify-center mt-8">
+              <button
+                className="bg-[#269200] rounded-[8px] text-white w-[488px] h-[48px] p-2 mt-9"
+                onClick={openCodeModal}
+              >
+                ورود
+              </button>
+            </div>
+            <div className="flex justify-end p-2">
+              <button
+                onClick={editPhoneNumber}
+                className=" text-[12px] text-[#5F5F5F]"
+              >
+                ویرایش شماره
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {codeModalRules && (
+        <div className="modal modal-open p-3">
+          <div className="bg-white rounded-[8px] p-5 w-[560px] h-[292px]">
+            <div className="flex justify-end">
+              <button onClick={closeModalRules}>
+                <Image src={vextorx} alt="login" width={14} height={14} />
+              </button>
+            </div>
+            <h2 className="text-[18px] text-center font-bold mb-4">
+              قوانین کلینیک فیزیوتراپی مکین
+            </h2>
+            <div>
+              ثبت نام، ورود کاربران و استفاده از پلتفرم، رزرو یا خرید محصول به
+              معنای آگاه بودن و پذیرفتن  کلیه شرایط و قوانین آن است. لازم به ذکر
+              است شرایط و قوانین مندرج در وبسایت، جایگزین کلیه قبلی محسوب می .
+              توجه داشته باشید کلیه اصول و کلینیک سلامت منطبق با قوانین جمهوری
+              اسلامی ایران و مقررات سازمان پزشکی کشور است، و کاربران می‌بایست
+              هنگام استفاده از خدمات سایت کلیه  قوانین و مقررات جمهوری اسلامی
+              ایران را رعایت نمایند.
+            </div>
+
+            <div className=" mt-3 flex justify-center">
+              <button
+                className="bg-[#269200] rounded-[8px] text-white w-[488px] h-[48px] p-2 "
+                onClick={acceptRulesAndGoBack}
+              >
+                پذیرش
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </>

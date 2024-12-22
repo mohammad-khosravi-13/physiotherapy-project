@@ -23,14 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-   
+  
     <>
       <Head>
         <link rel="icon" href="@/app/Logo 1.svg" />
       </Head>
       <html className="bg-white" lang="fa" dir="rtl">
         <body
-          className= {`${geistSans.variable} ${geistMono.variable} antialiased px-10 `}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased  px-10`}
         >
           <ReactQueryProvider>{children}</ReactQueryProvider>
         </body>

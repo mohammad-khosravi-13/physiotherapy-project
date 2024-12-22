@@ -70,7 +70,7 @@ function Product() {
         <Image src={vectormahsolat} alt="Vector" width={18} height={21} />
         <h3>محصولات</h3>
         <div className="flex justify-end gap-2 mr-[1050px]">
-          <Link className="btn text-[16px]" href={"/Products"}>
+          <Link className="btn text-[16px]" href={"/products"}>
             بیشتر
           </Link>
           <Image

@@ -4,7 +4,7 @@ import Crod from "@/container/Panel-Dashboard/Crod";
 import HeaderPanel from "@/container/Panel-Dashboard/HeaderPanel";
 import React from "react";
 
-export default function paneldashboard() {
+export default function security() {
   return (
     <>
       <HeaderPanel />
@@ -15,7 +15,7 @@ export default function paneldashboard() {
             <PanelPassword />
           </div>
 
-          <div>
+          <div className="mr-72">
             <Buttonpanel />
           </div>
         </div>

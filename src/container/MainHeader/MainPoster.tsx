@@ -34,6 +34,8 @@ export default function MainPoster() {
       <p>انتخاب ساعت</p>
     </div>
     <div className="pr-48  ">
+      <button>
+
       <Image
         src={vectorsearch}
         alt=""
@@ -41,6 +43,7 @@ export default function MainPoster() {
         height={24}
         className="bg-[#0974A2] w-[46px] h-[46px] p-2 rounded-[4px] "
       />
+      </button>
     </div>
   </div>
 </div>

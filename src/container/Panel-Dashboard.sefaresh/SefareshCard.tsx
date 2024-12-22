@@ -60,7 +60,7 @@ export default function SefareshCard() {
           </button>
         </div>
         <div className="flex justify-center">
-          <button className=" w-[152px] h-[48px] border-[2px] border-[#0974A2] rounded-[8px] -mt-2">
+          <button className=" w-[152px] h-[48px] border-[2px] border-[#0974A2] rounded-[8px] -mt-2 btn">
             سفارش مجدد
           </button>
         </div>

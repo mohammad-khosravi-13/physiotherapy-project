@@ -37,9 +37,9 @@ export default function Feild() {
             </div>
           </div>
         </div>
-            <div className="absolute right-[460px] w-[106px] h-[48px] border-[2px] border-[#FF7A00] -mt-20 flex items-center justify-center rounded-[8px]">
-              <button>اعمال</button>
-            </div>
+        <div className="absolute right-[460px] w-[106px] h-[48px] border-[2px] border-[#FF7A00] -mt-20 flex items-center justify-center rounded-[8px] btn">
+          اعمال
+        </div>
       </div>
       <div className="flex justify-end ml-24 mt-5">
         <button className=" btn bg-[#0974A2] w-[181px] h-[48px] rounded-[8px] text-white">

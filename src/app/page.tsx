@@ -18,7 +18,7 @@ function page() {
       <MainPoster />
 
       <div className="flex flex-col mt-72  ">
-        <DayofWork />×
+        <DayofWork />
         <MovieContent />
         <Swiiper />
         <PicofReserve />

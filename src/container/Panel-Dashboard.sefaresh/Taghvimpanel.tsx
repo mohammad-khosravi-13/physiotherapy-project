@@ -25,8 +25,8 @@ export default function Taghvimpanel() {
                 />
               </div>
             </div>
-            <div className="absolute right-[460px] w-[106px] h-[48px] border-[2px] border-[#FF7A00] -mt-8 flex items-center justify-center rounded-[8px]">
-              <button>اعمال</button>
+            <div className="absolute right-[460px] w-[106px] h-[48px] border-[2px] border-[#FF7A00] -mt-8 flex items-center justify-center rounded-[8px] btn">
+              اعمال
             </div>
           </div>
         </div>
